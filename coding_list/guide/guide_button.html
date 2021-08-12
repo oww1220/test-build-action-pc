@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width">
+	<title>Button Guide</title>
+	<link rel="stylesheet" href="/npass/css/npass.css">
+	<link rel="stylesheet" href="/npass/lib/swiper/swiper-bundle.min.css">
+	<link rel="stylesheet" href="/npass/css/contents.css">
+
+	<!-- 가이드용 -->
+	<link rel="stylesheet" type="text/css" href="/coding_list/css/base.css">
+	<link rel="stylesheet" type="text/css" href="/coding_list/css/pretty.css">
+	<link type="text/css" rel="stylesheet" href="/resource/css/common.css" />
+	<!--//  가이드용 -->
+
+	<script src="/npass/lib/jquery/jquery.min.js"></script>
+	<script scr="/npass/js/ui.js"></script>
+	<style>
+		.tag:not(body){
+			align-items : baseline;
+			background : none;
+			display : inline;
+			padding : 0;
+			height : auto;
+		}
+	</style>
+</head>
+<body>
+
+<div id="wrap" class="coding_guide">
+	<h1 class="h1_guide">Button Guide</h1>
+	<h2 class="h2_guide">01. Large Button</h2>
+	<!-- View -->
+	<div class="guide_wrap">
+		<button type="button" class="button is-large is-gray">취소</button>
+		<button type="button" class="button is-large is-green">확인</button>
+		<button type="button" class="button is-large is-outline">회원가입</button>
+	</div>
+	<!-- // View -->
+
+	<!-- code -->
+	<div class="d_desc code">
+		<xmp class="prettyprint linenums javascript">
+/*
+ * 기능에 따라 button태그 or a태그 사용
+ * 기본 class="button"
+ * class="is-large" / Height : 55px / 취소, 확인, 회원가입시 사용 
+ * 취소 class="is-gray"
+ * 확인 class="is-green"
+ * 회원가입 class="is-join"
+ * 페이지 하단 reuslt 기능으로 사용
+ */
+<button type="button" class="button is-large is-gray">취소</button>
+<button type="button" class="button is-large is-green">확인</button>
+<button type="button" class="button is-large is-outline">회원가입</button>
+<a href="#" class="button is-large is-gray">취소</a>
+<a href="#" class="button is-large is-green">확인</a>
+<a href="#" class="button is-large is-outline">회원가입</a>
+		</xmp>
+	</div>
+	<!-- // code -->
+
+	<h2 class="h2_guide">02. Medium Button</h2>
+	<!-- View -->
+	<div class="guide_wrap">
+		<button type="button" class="button is-medium is-green">아이디 확인</button>
+	</div>
+	<!-- // View -->
+
+	<!-- code -->
+	<div class="d_desc code">
+		<xmp class="prettyprint linenums javascript">
+/*
+ * 기능에 따라 button태그 or a태그 사용
+ * 기본 class="button"
+ * class="is-medium" / Height : 50px / form요소 input에 대한 기능실행시 사용
+ */
+<button type="button" class="button is-medium is-green">아이디 확인</button>
+<a href="#" class="button is-medium is-green">아이디 확인</a>
+		</xmp>
+	</div>
+	<!-- // code -->
+
+	<h2 class="h2_guide">03. Link Button</h2>
+	<!-- View -->
+	<div class="guide_wrap">
+		<button type="button" class="button is-text">아이디 확인</button>
+	</div>
+	<!-- // View -->
+
+	<!-- code -->
+	<div class="d_desc code">
+		<xmp class="prettyprint linenums javascript">
+/*
+ * 기능에 따라 button태그 or a태그 사용
+ * 기본 class="button"
+ */
+<button type="button" class="button is-text">아이디 확인</button>
+<a href="#" class="button is-text">아이디 확인</a>
+		</xmp>
+	</div>
+	<!-- // code -->
+
+	<h2 class="h2_guide">04. Page Fixed</h2>
+	<!-- View -->
+	<div class="guide_wrap">
+		<div class="buttons is-centered">
+			<button class="button is-large is-green is-mobile-fullwidth">아이핀 인증하기</button>
+		</div>
+	</div>
+	<!-- // View -->
+
+	<!-- code -->
+	<div class="d_desc code">
+		<xmp class="prettyprint linenums javascript">
+/*
+ * class="buttons"에 class="is-fixed" 추가
+ * id="contents"에 class="is-fixed" 추가
+ */
+ <div class="buttons is-centered is-fixed">
+	<button class="button is-large is-green is-mobile-fullwidth">아이핀 인증하기</button>
+</div>
+		</xmp>
+	</div>
+	<!-- // code -->
+
+	<h2 class="h2_guide">05. Mobile Full Width</h2>
+	<!-- View -->
+	<div class="guide_wrap">
+		<button class="button is-large is-green is-mobile-fullwidth">아이핀 인증하기</button>
+	</div>
+	<!-- // View -->
+
+	<!-- code -->
+	<div class="d_desc code">
+		<xmp class="prettyprint linenums javascript">
+/*
+ * class="button"에 class="is-mobile-fullwidth" 추가
+ */
+<button class="button is-large is-green is-mobile-fullwidth">아이핀 인증하기</button>
+		</xmp>
+	</div>
+	<!-- // code -->
+
+	
+
+</div>
+<script type="text/javascript" src="/coding_list/js/pretty.js"></script>
+</body>
+</html>

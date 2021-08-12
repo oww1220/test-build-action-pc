@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="format-detection" content="telephone=no" />
+	<link rel="stylesheet" href="../css/layout.css">
+	<link rel="stylesheet" href="../css/swiper.min.css">
+	<title>T우주</title>
+</head>
+
+<body>
+	<div id="wrap">
+		<!-- Header -->
+		<header>
+	<!--logo-->
+	<h1>
+		<a href="/main.html"><img src="./../images/logo_main.png" alt="T우주" 로고"></a>
+	</h1>
+	<!-- siteMap -->
+	<nav>
+		<ul>
+			<li>
+				<a href="/main.html">HOME</a>
+			</li>
+			<li>
+				<a href="/pass.html">우주패스 소개</a>
+			</li>
+			<li>
+				<a href="/ticket.html">우주 티켓부스 이벤트</a>
+			</li>
+			<li>
+				<a href="/delivery.html">우주 택배 이벤트</a>
+			</li>
+			<li>
+				<a href="/mad.html">T우주X매드몬스터</a>
+			</li>
+		</ul>
+	</nav>
+</header>
+		<!-- // Header -->
+
+		<!-- intro -->
+		<div class="intro-overlay">
+			<div class="intro-video">
+				<div id="lottie00_01"></div>
+			</div>
+		</div>
+		<!-- //intro -->
+
+		<canvas id="webgl-universe"></canvas>
+
+		<div id="content">
+			<!--main video-->
+			<article class="mainVideo">
+				<div>
+					<video muted autoplay loop playsinline>
+						<source src="" type="video/mp4">
+						<strong>Your browser does not support the video teg.</strong>
+					</video>
+				</div>
+			</article>
+			<!--tab--> 
+			<article class="mainTab">
+				<!-- tab title-->
+				<ul class="moveLeft aos-tab">
+					<li class="left on">
+						<a href="javascript:;">T우주란?</a>
+					</li>
+					<li class="right">
+						<a href="javascript:;">우주패스란?</a>
+					</li>
+				</ul>
+				<!-- tab content -->
+				<div class="tabContent">
+					<ul>
+						<!--left tab-->
+						<li class="leftTab">
+							<dl>
+								<dt data-aos="fade-up">우리는 이제<br />우주로 갑니다</dt>
+								<dd data-aos="fade-up">
+									이곳에선 부담 없이 좋아하는 커피와 빵을 고르고,<br />
+									선곡 고민 없이 취향에 맞는 음악을 들을 수 있어요.<br />
+									<br />
+									배송비 없이 해외 직구를 마음껏 즐기고,<br />
+									용량 걱정 없이 일상을 클라우드에 남길 수도 있죠.<br />
+									<br />
+									지루할 틈 없이 최애 드라마를 정주행하면서<br />
+									좋아하는 메뉴를 배달로 즐기는 주말은 어때요?<br />
+									<br />
+									아주 좋아하는 것, 자주 필요한 것을<br />
+									더 가볍게 누리는 새로운 스케일의 구독 생활,<br />
+									이곳은 우주입니다.<br />
+									<br />
+									통신사 상관없이 T월드에서<br />
+									당신의 우주를 만나보세요.
+								</dd>
+							</dl>
+							<div class="universe">
+								<dl>
+									<dt data-aos="fade-up">모두의 구독 유니버스</dt>
+									<dd data-aos="fade-up"><img src="./../images/bi.png" alt="OLKL"></dd>
+								</dl>
+								<a href="#" class="arrowBtn" data-aos="fade-up">구독하러 가기</a>	
+							</div>
+							<h5 data-aos="fade-up">EVENT</h5>
+							<ul>
+								<li data-aos="fade-up">
+									<a href="/ticket.html" class="add-svg">
+										<dl>
+											<dt>우주 티켓부스</dt>
+											<dd>이벤트 참여하기</dd>
+										</dl>
+										<span>line</span>
+										<div class="svg-W">
+											<div id="lottie10"></div>
+										</div>
+									</a>
+								</li>
+								<li data-aos="fade-up">
+									<a href="/delivery.html" class="add-svg">
+										<dl>
+											<dt>우주 택배</dt>
+											<dd>이벤트 참여하기</dd>
+										</dl>
+										<span>line</span>
+										<div class="svg-W">
+											<div id="lottie09"></div>
+										</div>
+									</a>
+								</li>
+							</ul>
+							<div class="pcQr" data-aos="fade-up">
+								<div>
+									<div><img src="../images/qr_img.png" alt="QR코드"></div>
+									<p>이벤트 참여는 모바일로만 가능합니다.<br />모바일로 접속해 참여해주세요!</p>
+								</div>
+								<a href="#" class="goBtn">공유하기</a>
+							</div>
+						</li>
+						<!--right tab-->
+						<li class="rightTab">
+							<dl>
+								<dt data-aos="fade-up">첫 달은 부담없이<br />구독해 보세요</dt>
+								<dd data-aos="fade-up">
+									여러분의 생활 패턴에 맞게 두 가지로<br /> 준비된 구독 혜택, 우주패스를 사용해 보세요.<br /><br />첫 달은 훨씬 저렴한 가격으로<br />T월드에서 만날 수 있어요!
+								</dd>
+							</dl>
+							<ul>
+								<li data-aos="fade-up">
+									<a href="/pass.html">
+										<span>one</span>
+										<dl>
+											<dt>우주패스 all</dt>
+											<dd>월 9,900원<br />
+												<strong>첫 달 1,000원</strong>
+											</dd>
+										</dl>
+										<div>구독 혜택 알아보기</div>
+									</a>
+								</li>
+								<li data-aos="fade-up">
+									<a href="/pass.html">
+										<span>one</span>
+										<dl>
+											<dt>우주패스 mini</dt>
+											<dd class="mini">월 4,900원<br />
+												<strong>첫 달 100원</strong>
+											</dd>
+										</dl>
+										<div>구독 혜택 알아보기</div>
+									</a>
+								</li>
+							</ul>
+							<!--partner list-->
+							<div class="mainPartner">
+								<h5 data-aos="fade-up">T우주 파트너들이 궁금하신가요?</h5>
+								<!-- main logo-->
+								<div class="mainPlanet" data-aos="fade-up">
+									<ul>
+										<li data-layer="rocket-obj-19" class="on"><div><img src="../images/logo_one_amazon_l.png" alt="아마존"></div></li>
+										<li data-layer="rocket-obj-08"><div><img src="../images/planet_starbucks.png" alt="스타벅스"></div></li>
+										<li data-layer="rocket-obj-03"><div><img src="../images/logo_one_google_l.png" alt="구글원"></div></li>
+										<li data-layer="rocket-obj-09"><div><img src="../images/img-planet-tmb-emart_l.png" alt="이마트"></div></li>
+										<li data-layer="rocket-obj-05"><div><img src="../images/logo_one_bm_l.png" alt="배달의민족"></div></li>
+										<li data-layer="rocket-obj-06"><div><img src="../images/planet_paris.png" alt="파리바게트"></div></li>
+									</ul>
+								</div>
+								<!--swiper-->
+								<div class="swiper-container tabSlide" data-aos="fade-up">
+									<ul class="swiper-wrapper">
+										<li class="swiper-slide on" data-layer="rocket-obj-19">
+											<a href="javascript:;">
+												<img src="../images/logo_one_amazon.png" alt="amazon">
+												<span>one</span>
+											</a>
+										</li>
+										<li class="swiper-slide" data-layer="rocket-obj-08">
+											<a href="javascript:;">
+												<img src="../images/img-planet-tmb-star.png" alt="스타벅스">
+												<span>one</span>
+											</a>
+										</li>
+										<li class="swiper-slide" data-layer="rocket-obj-03">
+											<a href="javascript:;">
+												<img src="../images/logo_one_google.png" alt="구글">
+												<span>one</span>
+											</a>
+										</li>
+										<li class="swiper-slide" data-layer="rocket-obj-09">
+											<a href="javascript:;">
+												<img src="../images/img-planet-tmb-emart.png" alt="이마트">
+												<span>one</span>
+											</a>
+										</li>
+										<li class="swiper-slide" data-layer="rocket-obj-05">
+											<a href="javascript:;">
+												<img src="../images/logo_one_bm.png" alt="배달의민족">
+												<span>one</span>
+											</a>
+										</li>
+										<li class="swiper-slide" data-layer="rocket-obj-06">
+											<a href="javascript:;">
+												<img src="../images/logo_paris_m.png" alt="파리바게트">
+												<span>one</span>
+											</a>
+										</li>
+									</ul>
+								</div>
+								<!-- btn -->
+								<div class="sliderBtn">
+									<a class="swiper-button-prev" href="javascript:;">이전</a>
+									<a class="swiper-button-next" href="javascript:;">다음</a>
+								</div>
+								<div class="moreBenefit" data-aos="fade-up">
+									<a href="javascript:;" class="arrowBtn" data-layer="rocket-obj-19">혜택 자세히 보기</a>								
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</article>
+		</div>
+		<div class="layer-rocket rocket-obj-19">
+	<div class="layer-top">
+		<div class="btn-rocket-open">
+			<img src="../images/bg-rocket.png" alt="rocket"/>
+		</div>
+		<button type="button" class="btn-rocket-close" data-layer="rocket-obj-19">
+			close rocket layer
+		</button>
+	</div>
+	<div class="layer-cont">
+		<div class="layer-cont-in">
+			<div class="benefitView">
+				<dl>
+					<dt><img src="../images/logo_amazon_bk.png" alt="아마존"></dt>
+					<dd>아마존</dd>
+				</dl>
+				<div>
+					<dl>
+						<dt>해외직구 무료 배송 + 1만원 할인</dt>
+						<dd>
+							직구로 해외 상품을 저렴하게 구입하고 싶어도<br /> 
+							비싸고 부담스러운 해외 배송비.<br /><br />
+							T우주가 아마존 무제한 무료 배송 혜택으로<br />
+							그 걱정을 덜어드릴게요!<br />
+							매달 5천원 장바구니 쿠폰 2장까지 드립니다.<br /><br />
+							아마존 공식 스토어를 만날 수 있는 편리한 방법,<br /> 
+							11번가에서 다양한 아마존 상품들을<br />
+							부담 없이 즐겨보세요.
+						</dd>
+					</dl>
+					<a href="#" class="arrowBtn">우주패스 구독하러 가기</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="layer-rocket rocket-obj-08">
+	<div class="layer-top">
+		<div class="btn-rocket-open">
+			<img src="../images/bg-rocket.png" alt="rocket"/>
+		</div>
+		<button type="button" class="btn-rocket-close" data-layer="rocket-obj-08">
+			close rocket layer
+		</button>
+	</div>
+	<div class="layer-cont">
+		<div class="layer-cont-in">
+			<div class="benefitView">
+				<dl>
+					<dt><img src="../images/logo_starbucks_l.png" alt="스타벅스"></dt>
+					<dd>스타벅스</dd>
+				</dl>
+				<div>
+					<dl>
+						<dt>아메리카노 4잔 구매 시 1잔 무료<br /><span>(월 2회)</span> 
+						</dt>
+						<dd>여러분의 향긋한 커피 라이프를 위해 스타벅스가 T우주와 함께 합니다.<br /><br />
+							아메리카노를 꼭 챙겨 마시는 당신이라면<br />
+							스타벅스 4+1 혜택을 놓치지 마세요.<br />
+							매달 2잔의 무료 커피를 즐길 수 있으니까요.<br /><br />
+							T우주에서 당신의 일상을 커피향으로 가득 채워보면 어떨까요?  
+						</dd>
+					</dl>
+					<a href="#" class="arrowBtn">우주패스 구독하러 가기</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="layer-rocket rocket-obj-03">
+	<div class="layer-top">
+		<div class="btn-rocket-open">
+			<img src="../images/bg-rocket.png" alt="rocket"/>
+		</div>
+		<button type="button" class="btn-rocket-close" data-layer="rocket-obj-03">
+			close rocket layer
+		</button>
+	</div>
+	<div class="layer-cont">
+		<div class="layer-cont-in">
+			<div class="benefitView">
+				<dl>
+					<dt><img src="../images/google_logo_l.png" alt="Google One"></dt>
+					<dd>Google One</dd>
+				</dl>
+				<div>
+					<dl>
+						<dt>멤버십 100GB</dt>
+						<dd>
+							시간이 지날 수록 휴대폰에 쌓여가는 사진과<br /> 
+							동영상, 저장할 방법이 고민되신다구요?<br /><br />
+							이제 걱정하지 마세요!<br />
+							T우주에서는 원하는 만큼 넉넉하게 스토리지를 사용할 수 있습니다.<br /><br />
+							우주패스에서 12개월 동안 지급되는<br /> 
+							Google One 멤버십 100GB 용량으로 소중한 추억을 간직하세요.
+						</dd>
+					</dl>
+					<a href="#" class="arrowBtn">우주패스 구독하러 가기</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="layer-rocket rocket-obj-09">
+	<div class="layer-top">
+		<div class="btn-rocket-open">
+			<img src="../images/bg-rocket.png" alt="rocket"/>
+		</div>
+		<button type="button" class="btn-rocket-close" data-layer="rocket-obj-09">
+			close rocket layer
+		</button>
+	</div>
+	<div class="layer-cont">
+		<div class="layer-cont-in">
+			<div class="benefitView">
+				<dl>
+					<dt><img src="../images/logo_emart_l.png" alt="이마트"></dt>
+					<dd>이마트</dd>
+				</dl>
+				<div>
+					<dl>
+						<dt>매달 12,000원 할인 혜택
+						</dt>
+						<dd>직접 보고 꼼꼼하게 장을 보는 당신에게<br /> 
+							T우주가 더 알뜰하게 풍요로운 장바구니를 만들어 드립니다.<br /><br />
+							한 번 장볼 때 마다 사용할 수 있는<br />
+							3천 원 할인 쿠폰을 한 달에 4번 드려요.<br /><br />
+							매주 발송되는 이마트 쿠폰으로<br />
+							알뜰한 쇼핑 라이프를 시작해 보세요. 
+						</dd>
+					</dl>
+					<a href="#" class="arrowBtn">우주패스 구독하러 가기</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="layer-rocket rocket-obj-05">
+	<div class="layer-top">
+		<div class="btn-rocket-open">
+			<img src="../images/bg-rocket.png" alt="rocket"/>
+		</div>
+		<button type="button" class="btn-rocket-close" data-layer="rocket-obj-05">
+			close rocket layer
+		</button>
+	</div>
+	<div class="layer-cont">
+		<div class="layer-cont-in">
+			<div class="benefitView">
+				<dl>
+					<dt><img src="../images/logo_bm_l.png" alt="배달의민족"></dt>
+					<dd>배달의민족</dd>
+				</dl>
+				<div>
+					<dl>
+						<dt>매달 8,000원의 할인
+						</dt>
+						<dd>요즘 집콕하며 배달 시켜 먹을 일이 많은데<br />
+							지구에서의 음식비가 만만치 않으시다구요?<br /><br />
+							T우주에서는 배달 음식비가 <br />
+							매월 8천원 만큼 가벼워집니다.<br /><br />
+							매달 8천원 할인 (배달의민족 5천원 쿠폰 &amp; 배민1 3천원 쿠폰)으로 맛있는 음식을 부담없이 즐겨보세요.
+						</dd>
+					</dl>
+					<a href="#" class="arrowBtn">우주패스 구독하러 가기</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="layer-rocket rocket-obj-06">
+	<div class="layer-top">
+		<div class="btn-rocket-open">
+			<img src="../images/bg-rocket.png" alt="rocket"/>
+		</div>
+		<button type="button" class="btn-rocket-close" data-layer="rocket-obj-06">
+			close rocket layer
+		</button>
+	</div>
+	<div class="layer-cont">
+		<div class="layer-cont-in">
+			<div class="benefitView">
+				<dl>
+					<dt><img src="../images/logo_paris_l.png" alt="파리바게뜨"></dt>
+					<dd>파리바게뜨</dd>
+				</dl>
+				<div>
+					<dl>
+						<dt>빵과 음료 최대 30% 할인
+						</dt>
+						<dd>갓 구운 빵 냄새에 이끌려 이것 저것 담다가<br />
+							결제 금액에 놀란 적 있으신가요?<br />
+							이제 T우주에서는 걱정하지 마세요!<br /><br />
+							파리바게뜨에서 원하는 빵과 음료를 최대 30% 할인 받으실 수 있어요!<br /><br /> 
+							한 달 최대 3만원 까지 할인되는<br /> 
+							빵빵한 혜택으로,
+							T우주가 빵을 사랑하는 당신을 
+							응원합니다.
+						</dd>
+					</dl>
+					<a href="#" class="arrowBtn">우주패스 구독하러 가기</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+		<footer>
+	<div>
+		<div>
+			<div class="fooLogo"><img src="./../images/logo_foo.png" alt="T우주 로고"></div>
+			<p>&copy; T우주 Co.,Ltd.</p>
+		</div>
+		<ul>
+			<li><a href="#">개인정보처리방침</a></li>
+			<li><a href="#">이용약관</a></li>
+		</ul>
+		<!-- <div><address>서울특별시 중구 을지로65 (을지로2가) SK T-타워 SK텔레콤(주)</address></div> -->
+	</div>
+</footer>
+	</div>
+</body>
+	<!-- <script src="../js/jquery.min.js"></script>
+<script src="../js/swiper.min.js"></script>
+<script src="../js/common.js"></script> -->
+
+
+<script type="text/javascript" src="../bundle/jquery.chunk.js"></script>
+<!-- <script type="text/javascript" src="../bundle/three.chunk.js"></script> -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r124/three.min.js" integrity="sha512-jeYvJdyAYkpQCY/omvCYQo89qA5YxDW4JBT7COPsHT2sOAanwxkZRFeP9gc69b5reSDpZIoyCqZQZcWZkbB5Gw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script type="text/javascript" src="../bundle/vendors.chunk.js"></script>
+<script type="text/javascript" src="../bundle/main.chunk.js"></script>
+<!-- <script src="../js/jquery.min.js"></script> -->
+<script src="../js/swiper.min.js"></script>
+<script src="../js/common.js"></script>
+	
+<script>
+	// Main tab slide
+
+	function swiperPartner() {
+		var swiperPartnerIns = null;
+		if($('.tabSlide .swiper-slide').length >= 7) {
+			swiperPartnerIns = new Swiper('.tabSlide', {
+				// scrollbarHide: true,
+				// slidesPerView: 'auto',
+				// spaceBetween: 0,
+				// speed : 1000,
+
+				scrollbarHide: true,
+				slidesPerView: 6,
+				slidesPerGroup : 6,
+				loopFillGroupWithBlank : true,
+				spaceBetween: 14,
+			});
+		}
+		$('.mainTab .moveLeft .right').on('click', function(){
+			if(swiperPartnerIns) swiperPartnerIns.update();
+		});
+	}
+	swiperPartner();
+	
+
+	// Main tab slide image change
+	function thumbs () {
+		
+		$(".tabSlide .swiper-slide").on('click', function(){
+			var targetLayer = $(this).data('layer');
+			var $target = $('.moreBenefit .arrowBtn');
+			var clickIndex = $(this).index();
+
+			$target.removeData('layer');
+            $target.attr('data-layer', targetLayer);
+			$(this).addClass("on").siblings().removeClass("on");
+			$(".mainPlanet ul li").eq(clickIndex).addClass("on").siblings().removeClass("on");
+		});
+
+		// 혜택 자세히보기 이벤트 핸들러
+		$(document).on('click', '.moreBenefit .arrowBtn', function(e) {
+            var layer = '.' + $(e.target).data('layer');
+            if (!CommonUI.LayerRocket.eventChkFlag) return;
+            CommonUI.LayerRocket.cashGenerator = CommonUI.LayerRocket.open(layer, function(layer) {
+                console.log(layer + ': layer open!');
+            })();
+            CommonUI.Async.generaterRun(CommonUI.LayerRocket.cashGenerator);
+        });
+	}
+	thumbs()
+
+	function slideBtn(){
+		$(".swiper-button-prev").click(function(){
+			var currentIndex = $(".tabSlide ul .on").index();
+			$(".tabSlide ul li").eq(currentIndex - 1).addClass("on").siblings().removeClass("on");
+			$(".mainPlanet ul li").eq(currentIndex -1).addClass("on").siblings().removeClass("on")
+
+			var targetLayer = $(".tabSlide ul .on").data('layer');
+			var $target = $('.moreBenefit .arrowBtn');
+			var clickIndex = $(".tabSlide ul .on").index();
+
+			$target.removeData('layer');
+            $target.attr('data-layer', targetLayer);
+		});
+		$(".swiper-button-next").click(function(){
+			var currentIndex = $(".tabSlide ul .on").index();
+			var listLength = $(".tabSlide ul li").length;
+			
+			if(currentIndex >= listLength-1){
+				$(".tabSlide ul li").eq(0).addClass("on").siblings().removeClass("on");
+				$(".mainPlanet ul li").eq(0).addClass("on").siblings().removeClass("on");
+
+			}else{
+				$(".tabSlide ul li").eq(currentIndex + 1).addClass("on").siblings().removeClass("on");
+				$(".mainPlanet ul li").eq(currentIndex + 1).addClass("on").siblings().removeClass("on")
+
+			}
+			
+			var targetLayer = $(".tabSlide ul .on").data('layer');
+			var $target = $('.moreBenefit .arrowBtn');
+			var clickIndex = $(".tabSlide ul .on").index();
+
+			$target.removeData('layer');
+            $target.attr('data-layer', targetLayer);
+		});
+
+		
+		// 혜택 자세히보기 이벤트 핸들러
+		$(document).on('click', '.moreBenefit .arrowBtn', function(e) {
+            var layer = '.' + $(e.target).data('layer');
+            if (!CommonUI.LayerRocket.eventChkFlag) return;
+            CommonUI.LayerRocket.cashGenerator = CommonUI.LayerRocket.open(layer, function(layer) {
+                console.log(layer + ': layer open!');
+            })();
+            CommonUI.Async.generaterRun(CommonUI.LayerRocket.cashGenerator);
+        });
+		
+	}
+	slideBtn();
+
+</script>
+</html>

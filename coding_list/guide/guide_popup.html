@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width">
+	<title>POPUP Guide</title>
+	<link type="text/css" rel="stylesheet" href="/npass/css/reset.css">
+    <link type="text/css" rel="stylesheet" href="/npass/css/common.css">
+    <link type="text/css" rel="stylesheet" href="/npass/css/layout.css">
+    <link type="text/css" rel="stylesheet" href="/npass/css/contents.css">
+
+	<!-- 가이드용 -->
+	<link rel="stylesheet" type="text/css" href="/coding_list/css/base.css">
+	<link rel="stylesheet" type="text/css" href="/coding_list/css/pretty.css">
+	<link type="text/css" rel="stylesheet" href="/resource/css/common.css" />
+	<!--//  가이드용 -->
+
+	<script type="text/javascript" src="/npass/plugin/jquery/js/jquery.js"></script>
+</head>
+<body>
+
+<div id="wrap" class="coding_guide" style="background:#ccc">
+<h1 class="h1_guide">Popup Guide</h1>
+
+	<h2 class="h2_guide">01. Layer Popup Default</h2>
+	<!-- View -->
+	<div class="guide_wrap">
+		<aside class="layerPopup" style="position:static;transform:translate(0,0);">
+            <div class="inner">
+                <h3 class="titleTy2">クリエーター申し込み</h3>
+			</div>
+			<div class="popupGrid">
+
+			</div>
+            <a class="btnClose" href="javascript:;"><span>Close</span></a>
+        </aside>
+	</div>
+	<!-- // View -->
+
+	<!-- code -->
+	<div class="d_desc code">
+		<xmp class="prettyprint linenums javascript">
+<aside class="layerPopup"> <!-- 사이즈 변경시 inline style 추가 -->
+	<div class="inner">
+		<h3 class="titleTy2">クリエーター申し込み</h3>
+	</div>
+	<div class="popupGrid">
+		<!-- 내용 -->
+	</div>
+	<a class="btnClose" href="javascript:;"><span>Close</span></a>
+</aside>
+		</xmp>
+	</div>
+	<!-- //code -->
+
+	<h2 class="h2_guide">02. 개인화 Layer Popup</h2>
+	<!-- View -->
+	<div class="guide_wrap">
+		<aside class="layerPopup" style="position:static;transform:translate(0,0);">
+            <div class="inner">
+                <h3>
+					<span class="accInfoWrap">
+                        <span class="profileImg creatorImg">
+                            <span class="profileImgInr"><img src="/npass/images/dummy/@dummy7.jpg" alt="profile"></span>
+                        </span>
+                        <span class="profileTxt">
+                            <strong class="name">古室哲也</strong>
+                        </span>
+                    </span>
+				</h3>
+			</div>
+			<div class="popupGrid">
+
+			</div>
+            <a class="btnClose" href="javascript:;"><span>Close</span></a>
+        </aside>
+	</div>
+	<!-- // View -->
+
+	<!-- code -->
+	<div class="d_desc code">
+		<xmp class="prettyprint linenums javascript">
+<aside class="layerPopup">
+	<div class="inner">
+		<h3>
+			<span class="accInfoWrap">
+				<span class="profileImg creatorImg">
+					<span class="profileImgInr"><img src="/npass/images/dummy/@dummy7.jpg" alt="profile"></span>
+				</span>
+				<span class="profileTxt">
+					<strong class="name">古室哲也</strong>
+				</span>
+			</span>
+		</h3>
+	</div>
+	<div class="popupGrid">
+		<!-- 내용 -->
+	</div>
+	<a class="btnClose" href="javascript:;"><span>Close</span></a>
+</aside>
+		</xmp>
+	</div>
+	<!-- //code -->
+
+	<h2 class="h2_guide">02. 개인화 Layer Popup 여백없이 FUll 사이즈 </h2>
+	<!-- View -->
+	<div class="guide_wrap">
+		<aside class="layerPopup full" style="position:static;transform:translate(0,0);">
+            <div class="inner">
+                <h3>
+					<span class="accInfoWrap">
+                        <span class="profileImg creatorImg">
+                            <span class="profileImgInr"><img src="/npass/images/dummy/@dummy7.jpg" alt="profile"></span>
+                        </span>
+                        <span class="profileTxt">
+                            <strong class="name">古室哲也</strong>
+                        </span>
+                    </span>
+				</h3>
+			</div>
+			<div class="popupGrid">
+
+			</div>
+            <a class="btnClose" href="javascript:;"><span>Close</span></a>
+        </aside>
+	</div>
+	<!-- // View -->
+
+	<!-- code -->
+	<div class="d_desc code">
+		<xmp class="prettyprint linenums javascript">
+<aside class="layerPopup full"> <!-- Class="full" -->
+	<div class="inner">
+		<h3>
+			<span class="accInfoWrap">
+				<span class="profileImg creatorImg">
+					<span class="profileImgInr"><img src="/npass/images/dummy/@dummy7.jpg" alt="profile"></span>
+				</span>
+				<span class="profileTxt">
+					<strong class="name">古室哲也</strong>
+				</span>
+			</span>
+		</h3>
+	</div>
+	<div class="popupGrid">
+		<!-- 내용 -->
+	</div>
+	<a class="btnClose" href="javascript:;"><span>Close</span></a>
+</aside>
+		</xmp>
+	</div>
+	<!-- //code -->
+
+</div>
+<script type="text/javascript" src="/coding_list/js/pretty.js"></script>
+</body>
+</html>

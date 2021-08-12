@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="format-detection" content="telephone=no" />
+	<link rel="stylesheet" href="../css/layout.css">
+	<link rel="stylesheet" href="../css/swiper.min.css">
+	<title>T우주</title>
+</head>
+
+<body>
+	<div id="wrap">
+		<!-- Header -->
+		<header>
+	<!--logo-->
+	<h1>
+		<a href="/main.html"><img src="./../images/logo_main.png" alt="T우주" 로고"></a>
+	</h1>
+	<!-- siteMap -->
+	<nav>
+		<ul>
+			<li>
+				<a href="/main.html">HOME</a>
+			</li>
+			<li>
+				<a href="/pass.html">우주패스 소개</a>
+			</li>
+			<li>
+				<a href="/ticket.html">우주 티켓부스 이벤트</a>
+			</li>
+			<li>
+				<a href="/delivery.html">우주 택배 이벤트</a>
+			</li>
+			<li>
+				<a href="/mad.html">T우주X매드몬스터</a>
+			</li>
+		</ul>
+	</nav>
+</header>
+		<!-- // Header -->
+
+		<canvas id="webgl-universe"></canvas>
+
+		<div id="content" class="ticket">
+			<article class="ticketOpen">
+				<dl class="subTitle">
+					<dt data-aos="fade-up">즐거운 우주여행의 시작</dt>
+					<dd data-aos="fade-up">우주 티켓부스</dd>
+				</dl>
+				<div class="eventContent" data-aos="fade-up">
+					<p class="second">새로운 구독 세계 T우주로 출발합니다.<br /><br />
+						지금 바로 티켓을 발급받고,<br />UNV831편에 탑승하세요.<br /><br />
+						아마존, 구글, 스타벅스 등<br />
+						T우주에서 만날 수 있는 글로벌 파트너들을 찾아<br />
+						직접 미국으로 내가 원할 때 떠나는 기회!<br /><br />
+						바로 당첨을 확인할 수 있는<br />
+						<span>우주 럭키박스도 놓치지 마세요!</span>
+					</p>
+				</div>
+				<div class="eventInfo" data-aos="fade-up">
+					<dl>
+						<dt>이벤트 기간</dt>
+						<dd>2021년 8월 31일(화) – 9월 30일(목)까지</dd>
+					</dl>
+					<dl>
+						<dt>이벤트 대상</dt>
+						<dd>우주패스 구독자 및 티켓 발급자</dd>
+					</dl>
+					<dl>
+						<dt>당첨자 선발 안내</dt>
+						<dd>10월 13일 (수) 예정</dd>
+					</dl>
+					<span>one</span>
+				</div>
+			</article>
+			<article class="ticketRewards">
+				<h4 data-aos="fade-up">우주패스 리워드</h4>
+				<ul>
+					<li data-aos="fade-up" class="add-svg">
+						<a href="javascript:;" class="test-open-rocket" data-layer="rocket-obj-19">
+							<dl>
+								<dt>글로벌 우주 파트너스 투어
+									<span>총 9명 선발</span>
+								</dt>
+								<dd>자세히 보기</dd>
+							</dl>
+							<div class="svg-W">
+								<div id="lottie13"></div>
+							</div>
+						</a>
+					</li>
+					<li data-aos="fade-up" class="add-svg">
+						<a href="javascript:;" class="test-open-rocket" data-layer="rocket-obj-19">
+							<dl>
+								<dt>우주 럭키박스</dt>
+								<dd>자세히 보기</dd>
+							</dl>
+							<div class="svg-W">
+								<div id="lottie14"></div>
+							</div>
+						</a>
+					</li>
+				</ul>
+				<div data-aos="fade-up">버튼 클릭 시, 상세 내용을 확인하실 수 있습니다.</div>
+			</article>
+			<article class="ticketParticipate">
+				<h4 data-aos="fade-up">참여방법</h4>
+				<ul>
+					<li class="step01">
+						<dl>
+							<dt data-aos="fade-up">STEP 1</dt>
+							<dd data-aos="fade-up">우주패스 구독하기</dd>
+						</dl>
+						<div data-aos="fade-up" class="add-svg">
+							<div class="svg-W">
+								<div id="lottie01"></div>
+							</div>
+							<p>우주여행을 즐기기 위해서는 우주패스가 필요해요.<br /><br />
+								첫 달은 1,000원에 구독할 수 있으니<br />
+								부담없이 즐겨보세요!
+							</p>
+						</div>
+					</li>
+					<li class="step02">
+						<dl>
+							<dt data-aos="fade-up">STEP 2</dt>
+							<dd data-aos="fade-up">티켓 발급하기</dd>
+						</dl>
+						<div data-aos="fade-up">
+							<p>우주패스를 구독했다면<br />
+								UNV831편에 탑승하는 티켓을 발급받으세요.<br /> <br /> 
+								추첨을 통해 글로벌 우주 파트너스<br /> 
+								투어 기회를 드려요!<br />
+								좌석번호를 잊지마세요.
+							</p>
+						</div>
+					</li>
+					<li class="step03">
+						<dl>
+							<dt data-aos="fade-up">STEP 3</dt>
+							<dd data-aos="fade-up">우주 럭키박스 열어보기</dd>
+						</dl>
+						<div data-aos="fade-up" class="add-svg">
+							<div class="svg-W">
+								<div id="lottie03"></div>
+							</div>
+							<p>티켓 발급 후에 바로 지급되는 우주 럭키박스를 열어보세요.<br /><br />
+								우주패스 무료 구독권, 우주 코인 부터 우주 파트너들이 준비한<br />
+								다양한 선물들을 받으실 수 있어요!
+							</p>
+						</div>
+					</li>
+				</ul>
+			</article>
+			<div class="pcQr" data-aos="fade-up">
+				<div>
+					<div><img src="../images/qr_img.png" alt="QR코드"></div>
+					<p>이벤트 참여는 모바일로만 가능합니다.<br />모바일로 접속해 참여해주세요!</p>
+				</div>
+				<a href="#" class="goBtn">공유하기</a>
+			</div>
+			<article class="eventNotice">
+				<h5>*유의사항</h5>
+				<ul>
+					<li>해당 이벤트는 만 14세 이상부터 참여가 가능합니다.</li>
+					<li>리워드들은 당사의 사정에 따라 이유없이 변동될 수 있습니다.</li>
+					<li>타인의 정보 도용, 비정상적인 참여로 당첨되신 경우 당첨이 취소될 수 있고, 이벤트 참여시 불이익이 있을 수 있습니다. </li>
+					<li>당첨되신 이벤트 경품은 현금 또는 다른 경품으로 교환되지 않으며, 타인에게 양도하거나 판매하실 수 없습니다.</li>
+					<li>모든 리워드는 랜덤으로 추첨하며, 중복 당첨이 불가합니다.</li>
+					<li>당첨 안내 후 7일 이내에 연락이 닿지 않을 시, 당첨에서 제외될 수 있습니다.</li>
+					<li>개인정보를 정확하게 입력하지 않음으로 발생한 오배송 및 분실은 책임지지 않습니다.</li>
+					<li>본 이벤트 리워드들의 제세공과금은 모두 우주에서 부담합니다.</li>
+					<li><span>문의처 :</span> T우주 운영 사무국<br />
+						<address>서울특별시 강남구 논현로30길 42 3층<br /></address>
+						이메일: <a href="mailto:sktuniverse@gmail.com">sktuniverse@gmail.com</a><br />
+						전화: <a href="tel:02-575-7131">02-575-7131<br /></a> 
+						*평일 오전 10시~오후 5시, 점심시간(낮 12시~오후 1시) 및
+						공휴일 제외, 유료</li>
+				</ul>
+			</article>
+		</div>
+		<div class="layer-rocket rocket-obj-19">
+	<div class="layer-top">
+		<div class="btn-rocket-open">
+			<img src="../images/bg-rocket.png" alt="rocket"/>
+		</div>
+		<button type="button" class="btn-rocket-close" data-layer="rocket-obj-19">
+			close rocket layer
+		</button>
+	</div>
+	<div class="layer-cont">
+		<div class="layer-cont-in">
+
+			<div class="benefitView">
+				<dl>
+					<dt><img src="../images/img-planet-tmb-ama.png" alt="아마존"></dt>
+					<dd>amazon</dd>
+				</dl>
+				<div>
+					<dl>
+						<dt>매달 최대 12,000원의<br />할인 행복</dt>
+						<dd>
+							<p>집에서 편하게 맛집의 배달 음식을 받아볼 수 있는 지구에서의 음식비가 만만치 않으시다구요?</p>
+							<p>우주에서는 배달음식비가 조금 더 가벼워집니다. <br /><br />매달 지급되는 4장의 3,000원 할인 쿠폰으로 우주에서도 맛있는 음식을 부담없이 즐겨보세요. </p>
+						</dd>
+					</dl>
+					<a href="#" class="arrowBtn">우주패스 구독하러 가기</a>
+				</div>
+			</div>
+
+		</div>
+	</div>
+</div>
+		<footer>
+	<div>
+		<div>
+			<div class="fooLogo"><img src="./../images/logo_foo.png" alt="T우주 로고"></div>
+			<p>&copy; T우주 Co.,Ltd.</p>
+		</div>
+		<ul>
+			<li><a href="#">개인정보처리방침</a></li>
+			<li><a href="#">이용약관</a></li>
+		</ul>
+		<!-- <div><address>서울특별시 중구 을지로65 (을지로2가) SK T-타워 SK텔레콤(주)</address></div> -->
+	</div>
+</footer>
+	</div>
+</body>
+	<!-- <script src="../js/jquery.min.js"></script>
+<script src="../js/swiper.min.js"></script>
+<script src="../js/common.js"></script> -->
+
+
+<script type="text/javascript" src="../bundle/jquery.chunk.js"></script>
+<!-- <script type="text/javascript" src="../bundle/three.chunk.js"></script> -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r124/three.min.js" integrity="sha512-jeYvJdyAYkpQCY/omvCYQo89qA5YxDW4JBT7COPsHT2sOAanwxkZRFeP9gc69b5reSDpZIoyCqZQZcWZkbB5Gw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script type="text/javascript" src="../bundle/vendors.chunk.js"></script>
+<script type="text/javascript" src="../bundle/main.chunk.js"></script>
+<!-- <script src="../js/jquery.min.js"></script> -->
+<script src="../js/swiper.min.js"></script>
+<script src="../js/common.js"></script>
+	<script>
+		function confirm(){
+			$(".alertWin .goBtn").click(function(){
+				$(".alertWin").removeClass("on");
+			});
+		};
+		confirm();
+
+
+		// 로켓레이어 오픈
+		$(document).on('click', '.test-open-rocket', function(e) {
+			var layer = '.' + $(e.currentTarget).data('layer');
+			if (!CommonUI.LayerRocket.eventChkFlag) return;
+			/**
+			 * CommonUI.LayerRocket.open(layer: string, callback?: (layer: string) => void): ()=>Generator;
+			 * @param {string} layer : 첫번째 파라미터는 오픈할 고유클래스를 넘겨줌(필수)
+			 * @param {(layer: string)=>void)} callback : 두번째 파라미터로 오픈후 콜백 넘겨줌(선택)
+			 * @return {()=>Generator} : 제너레이터 함수 리턴
+			*/
+			CommonUI.LayerRocket.cashGenerator = CommonUI.LayerRocket.open(layer, function(layer) {
+				//레이어 오픈후 콜백함수 문맥
+				console.log(layer + ': rocket-layer open!');
+			})();
+			CommonUI.Async.generaterRun(CommonUI.LayerRocket.cashGenerator);
+		});
+
+		// 로켓레이어 닫기
+		$(document).on('click', '.btn-test-close', function(e) {
+			var layer = '.' + $(e.currentTarget).data('layer');
+			if (!CommonUI.LayerRocket.eventChkFlag) return;
+			/**
+			 * CommonUI.LayerRocket.close(layer: string, callback?: (layer: string) => void): ()=>Generator;
+			 * @param {string} layer : 첫번째 파라미터는 닫을 고유클래스를 넘겨줌(필수)
+			 * @param {(layer: string)=>void)} callback : 두번째 파라미터로 오픈후 콜백 넘겨줌(선택)
+			 * @return {()=>Generator} : 제너레이터 함수 리턴
+			*/
+			CommonUI.LayerRocket.cashGenerator = CommonUI.LayerRocket.close(layer, function(layer) {
+				//레이어 닫은후 콜백함수 문맥
+				console.log(layer + ': rocket-layer close!');
+			})();
+			CommonUI.Async.generaterRun(CommonUI.LayerRocket.cashGenerator);
+		});
+	</script>
+</html>

@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="format-detection" content="telephone=no" />
+	<link rel="stylesheet" href="../css/layout.css">
+	<link rel="stylesheet" href="../css/swiper.min.css">
+	<title>T우주</title>
+</head>
+
+<body>
+	<div id="wrap">
+		<!-- Header -->
+		<header>
+	<!--logo-->
+	<h1>
+		<a href="/main.html"><img src="./../images/logo_main.png" alt="T우주" 로고"></a>
+	</h1>
+	<!-- siteMap -->
+	<nav>
+		<ul>
+			<li>
+				<a href="/main.html">HOME</a>
+			</li>
+			<li>
+				<a href="/pass.html">우주패스 소개</a>
+			</li>
+			<li>
+				<a href="/ticket.html">우주 티켓부스 이벤트</a>
+			</li>
+			<li>
+				<a href="/delivery.html">우주 택배 이벤트</a>
+			</li>
+			<li>
+				<a href="/mad.html">T우주X매드몬스터</a>
+			</li>
+		</ul>
+	</nav>
+</header>
+		<!-- // Header -->
+		<canvas id="webgl-universe"></canvas>
+
+		<div id="content">
+
+
+			<div data-aos="fade-up"style="margin: 150px 0;">
+				<button type="button" class="test-open-rocket" data-layer="rocket-obj-test" style="color: #fff;">로켓 레이어 열기</button>  
+			</div>
+	
+			<div class="layer-rocket rocket-obj-test">
+				<div class="layer-top">
+					<div class="btn-rocket-open">
+						<img src="../images/bg-rocket.png" alt="rocket"/>
+					</div>
+					<button type="button" class="btn-rocket-close" data-layer="rocket-obj-test">
+						close rocket layer
+					</button>
+				</div>
+				<div class="layer-cont">
+					<div class="layer-cont-in">
+	
+						<!---->
+						알맹이 내용!
+	
+						<button type="button" class="btn-test-close" data-layer="rocket-obj-test">
+							일반 닫기
+						</button>
+						<!--//-->
+	
+					</div>
+				</div>
+			</div>
+	
+
+
+			<div data-aos="fade-up" style="margin: 150px 0;">
+				<button type="button" class="test-open-modal" data-layer="modal-obj-test" style="color: #fff;">모달 레이어 열기</button>  
+			</div>
+
+			<div class="modal-layer modal-obj-test">
+				<div class="modal-inner">
+					<div class="modal-scroll">
+		
+						<div class="modal-cont">
+	
+							<!---->
+							알맹이 내용!<br/>
+							알맹이 내용!알맹이 내용!알맹이 내용!알맹이 내용!알맹이 내용!<br/>
+							알맹이 내용!알맹이 내용!알맹이 내용!알맹이 내용!<br/>
+							알맹이 내용!<br/>
+							알맹이 내용!알맹이 내용!알맹이 내용!알맹이 내용!알맹이 내용!<br/>
+							알맹이 내용!알맹이 내용!알맹이 내용!알맹이 내용!<br/>
+							<button type="button" class="btn-modal-close" id="layer_close2" data-layer="modal-obj-test">닫기</button>	
+							<!--//-->
+	
+						</div>
+						
+					</div>
+				</div>
+			</div>
+			<div class="modal-dimmed"></div>
+	
+			
+		</div>
+	</div>
+</body>
+	<!-- <script src="../js/jquery.min.js"></script>
+<script src="../js/swiper.min.js"></script>
+<script src="../js/common.js"></script> -->
+
+
+<script type="text/javascript" src="../bundle/jquery.chunk.js"></script>
+<!-- <script type="text/javascript" src="../bundle/three.chunk.js"></script> -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r124/three.min.js" integrity="sha512-jeYvJdyAYkpQCY/omvCYQo89qA5YxDW4JBT7COPsHT2sOAanwxkZRFeP9gc69b5reSDpZIoyCqZQZcWZkbB5Gw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script type="text/javascript" src="../bundle/vendors.chunk.js"></script>
+<script type="text/javascript" src="../bundle/main.chunk.js"></script>
+<!-- <script src="../js/jquery.min.js"></script> -->
+<script src="../js/swiper.min.js"></script>
+<script src="../js/common.js"></script>
+	
+<script>
+$(function(){
+
+	// 로켓레이어 오픈
+	$(document).on('click', '.test-open-rocket', function(e) {
+		var layer = '.' + $(e.currentTarget).data('layer');
+		if (!CommonUI.LayerRocket.eventChkFlag) return;
+		/**
+		 * CommonUI.LayerRocket.open(layer: string, callback?: (layer: string) => void): ()=>Generator;
+		 * @param {string} layer : 첫번째 파라미터는 오픈할 고유클래스를 넘겨줌(필수)
+		 * @param {(layer: string)=>void)} callback : 두번째 파라미터로 오픈후 콜백 넘겨줌(선택)
+		 * @return {()=>Generator} : 제너레이터 함수 리턴
+		*/
+		CommonUI.LayerRocket.cashGenerator = CommonUI.LayerRocket.open(layer, function(layer) {
+			//레이어 오픈후 콜백함수 문맥
+			console.log(layer + ': rocket-layer open!');
+		})();
+		CommonUI.Async.generaterRun(CommonUI.LayerRocket.cashGenerator);
+	});
+
+	// 로켓레이어 닫기
+	$(document).on('click', '.btn-test-close', function(e) {
+		var layer = '.' + $(e.currentTarget).data('layer');
+		if (!CommonUI.LayerRocket.eventChkFlag) return;
+		/**
+		 * CommonUI.LayerRocket.close(layer: string, callback?: (layer: string) => void): ()=>Generator;
+		 * @param {string} layer : 첫번째 파라미터는 닫을 고유클래스를 넘겨줌(필수)
+		 * @param {(layer: string)=>void)} callback : 두번째 파라미터로 오픈후 콜백 넘겨줌(선택)
+		 * @return {()=>Generator} : 제너레이터 함수 리턴
+		*/
+		CommonUI.LayerRocket.cashGenerator = CommonUI.LayerRocket.close(layer, function(layer) {
+			//레이어 닫은후 콜백함수 문맥
+			console.log(layer + ': rocket-layer close!');
+		})();
+		CommonUI.Async.generaterRun(CommonUI.LayerRocket.cashGenerator);
+	});
+
+
+	//모달레이어 오픈
+	$(document).on('click', '.test-open-modal', function(e){
+		var layer = '.' + $(e.target).data('layer');
+		/**
+		 * CommonUI.LayerRocket.open(layer: string, dimmed: string, parent: string, callback?: ((layer: string) => void) | undefined): void;
+		 * @param {string} layer : 첫번째 파라미터는 오픈할 고유클래스를 넘겨줌(필수)
+		 * @param {string} dimmed : 두번째 파라미터는 딤드 클래스를 넘겨줌(필수)
+		 * @param {string} parent : 세번째 파라미터는 모달레이어 래핑클래스를 넘겨줌(필수)
+		 * @param {(layer: string)=>void)} callback : 마지막 파라미터로 오픈후 콜백 넘겨줌(선택)
+		 * @return {void} : 리턴값 없음
+		*/
+		CommonUI.Layer.open(layer, '.modal-dimmed', '.modal-layer', function(){
+			//레이어 오픈후 콜백함수 문맥
+			console.log(layer + ': modal-layer open!');
+		});
+	});
+
+	//모달레이어 닫기
+	$(document).on('click', '.btn-modal-close', function(e){
+		var layer = '.' + $(e.target).data('layer');
+		/**
+		 * CommonUI.LayerRocket.close(layer: string, dimmed: string, parent: string, callback?: ((layer: string) => void) | undefined): void;
+		 * @param {string} layer : 첫번째 파라미터는 닫을 고유클래스를 넘겨줌(필수)
+		 * @param {string} dimmed : 두번째 파라미터는 딤드 클래스를 넘겨줌(필수)
+		 * @param {string} parent : 세번째 파라미터는 모달레이어 래핑클래스를 넘겨줌(필수)
+		 * @param {(layer: string)=>void)} callback : 마지막 파라미터로 오픈후 콜백 넘겨줌(선택)
+		 * @return {void} : 리턴값 없음
+		*/
+		CommonUI.Layer.close(layer, '.modal-dimmed', '.modal-layer', function(){
+			//레이어 오픈후 콜백함수 문맥
+			console.log(layer + ': modal-layer close!');
+		});
+	});
+
+
+});
+</script>
+</html>
