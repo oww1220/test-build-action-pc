@@ -355,6 +355,11 @@ gulp.task('webpack', ()=>
     )
 );
 
+gulp.task(
+  'tsBundle',
+  gulp.series('ts', 'webpack')
+);
+
 
 /**
  * =======================================================+
@@ -398,8 +403,8 @@ gulp.task('clean', () => {
         dir.dist.js,
         dir.dist.images,
         dir.dist.library,
-        //dir.dist.bundle,
-        //dir.dist.build,
+        dir.dist.bundle,
+        dir.dist.build,
       ],
       {
         force: true
@@ -455,7 +460,7 @@ gulp.task('watch', () => {
     // watch ts
     gulp.watch(
         dir.src.ts + '**/*.ts',
-        gulp.series('ts', 'webpack')
+        gulp.series('tsBundle')
     );
 
     gulp.watch(dir.src.js + '**/*.js', gulp.series(['babel', 'babelMin']));
@@ -512,11 +517,10 @@ gulp.task(
     'babel',
     'babelMin',
     'imgMin',
-    'library',
     //'fileMove',
 	  //'bundleFileMove',
-    'ts',
-    'webpack',
+    'tsBundle',
+    'library',
     'watch',
     'browserSync'
   )
@@ -532,9 +536,8 @@ gulp.task(
     'babel',
     'babelMin',
     'imgMin',
+    'tsBundle',
     'library',
-    'ts',
-    'webpack'
 	//'bundleFileMove'
   )
 );
