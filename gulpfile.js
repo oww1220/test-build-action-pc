@@ -496,6 +496,10 @@ gulp.task('library', () => {
       .pipe((gulp.dest(dist + 'font/')));
 
     gulp
+      .src(src + 'images/svg/*.*')
+      .pipe((gulp.dest(dist + 'images/svg/')));
+
+    gulp
       .src(src + 'json/**/*.*')
       .pipe((gulp.dest(dir.dist.bundle + 'json/')));
 
