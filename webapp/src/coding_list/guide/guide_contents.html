@@ -1,0 +1,304 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>Contents Guide</title>
+	<meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width, viewport-fit=cover">
+	<link rel="stylesheet" href="/npass/css/npass.css">
+	<link rel="stylesheet" href="/npass/lib/swiper/swiper-bundle.min.css">
+	<link rel="stylesheet" href="/npass/css/contents.css">
+
+	<!-- 가이드용 -->
+	<link rel="stylesheet" type="text/css" href="/coding_list/css/base.css">
+	<link rel="stylesheet" type="text/css" href="/coding_list/css/pretty.css">
+	<link type="text/css" rel="stylesheet" href="/resource/css/common.css" />
+	<!--//  가이드용 -->
+
+	<script type="text/javascript" src="/npass/lib/jquery/jquery.min.js"></script>
+	<script scr="/npass/js/ui.js"></script>
+	<style>
+		.tag:not(body){
+			align-items : baseline;
+			background : none;
+			display : inline;
+			padding : 0;
+			height : auto;
+		}
+	</style>
+</head>
+<body>
+
+<div id="wrap" class="coding_guide">
+	<h1 class="h1_guide">Contents Guide</h1>
+	<h2 class="h2_guide">01-1. 단일 class - border</h2>
+
+	<!-- View -->
+	<div class="guide_wrap">
+		<div class="is-border-top" style="padding:20px">상단 border</div>
+		<div class="is-border-right" style="padding:20px">우측 border</div>
+		<div class="is-border-left" style="padding:20px">좌측 border</div>
+		<div class="is-border-bottom" style="padding:20px">하단 border</div>
+	</div>
+	<!-- // View -->
+
+<!-- Code -->
+<div class="d_desc code">
+	<xmp class="prettyprint linenums javascript">
+<div class="is-border-top"></div>
+<div class="is-border-right"></div>
+<div class="is-border-left"></div>
+<div class="is-border-bottom"></div>
+	</xmp>
+</div>
+<!-- // Code -->
+
+	<h2 class="h2_guide">01-2. 단일 class - align</h2>
+	<!-- View -->
+	<div class="guide_wrap">
+		<div class="is-align-left">좌측 정렬</div>
+		<div class="is-align-center">가운데 정렬</div>
+		<div class="is-align-right">우측 정렬</div>
+	</div>
+	<!-- // View -->
+
+<!-- Code -->
+<div class="d_desc code">
+	<xmp class="prettyprint linenums javascript">
+<div class="is-align-left">좌측 정렬</div>
+<div class="is-align-center">가운데 정렬</div>
+<div class="is-align-right">우측 정렬</div>
+	</xmp>
+</div>
+<!-- // Code -->
+
+	<h2 class="h2_guide">02-1. 데이터 없음</h2>
+	<!-- View -->
+	<div class="guide_wrap">
+		<div style="display : flex; height : 200px">
+			<div class="no-data">
+				<p>검색결과가 없습니다.</p>
+			</div>
+		</div>
+	</div>
+	<!-- // View -->
+
+<!-- Code -->
+<div class="d_desc code">
+	<xmp class="prettyprint linenums javascript">
+/*
+ * 좌우, 상하단 가운데 정렬
+ */
+<div class="no-data">
+	<p>검색결과가 없습니다.</p>
+</div>
+	</xmp>
+</div>
+<!-- // Code -->
+
+	<h2 class="h2_guide">03-01. 탭메뉴 Type1</h2>
+	<!-- View -->
+	<div class="guide_wrap">
+		<div class="tabs is-toggle">
+			<ul>
+				<li class="is-active">
+					<a href="javascript:;">
+						<span>자택 주소</span>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:;">
+						<span>직장 주소</span>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<!-- // View -->
+
+<!-- Code -->
+<div class="d_desc code">
+	<xmp class="prettyprint linenums javascript">
+<div class="tabs is-toggle">
+	<ul>
+		<li class="is-active">
+			<a href="javascript:;">
+				<span>자택 주소</span>
+			</a>
+		</li>
+		<li>
+			<a href="javascript:;">
+				<span>직장 주소</span>
+			</a>
+		</li>
+	</ul>
+</div>
+	</xmp>
+</div>
+<!-- // Code -->
+
+	<h2 class="h2_guide">03-02. 탭메뉴 Type2 - 라디오버튼</h2>
+	<!-- View -->
+	<div class="guide_wrap">
+		<div class="tabs type-2">
+			<ul>
+				<li class="is-active">
+					<label>
+						<input type="radio" name="tabs" checked>
+						<span>기본회원정보로 찾기</span>
+					</label>
+				</li>
+				<li>
+					<label>
+						<input type="radio" name="tabs">
+						<span>아이핀으로 찾기</span>
+					</label>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<!-- // View -->
+
+<!-- Code -->
+<div class="d_desc code">
+	<xmp class="prettyprint linenums javascript">
+<div class="tabs type-2">
+	<ul>
+		<li class="is-active">
+			<label>
+				<input type="radio" name="tabs" checked>
+				<span>기본회원정보로 찾기</span>
+			</label>
+		</li>
+		<li>
+			<label>
+				<input type="radio" name="tabs">
+				<span>아이핀으로 찾기</span>
+			</label>
+		</li>
+	</ul>
+</div>
+	</xmp>
+</div>
+<!-- // Code -->
+
+	<h2 class="h2_guide">03-02. 탭메뉴 Type2 - a태그</h2>
+	<!-- View -->
+	<div class="guide_wrap">
+		<div class="tabs type-2">
+			<ul>
+				<li class="is-active"> <!-- 활성화 class="is-active" -->
+					<a href="javascript:;"><span>카드</span></a>
+				</li>
+				<li>
+					<a href="javascript:;"><span>이메일</span></a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<!-- // View -->
+
+<!-- Code -->
+<div class="d_desc code">
+	<xmp class="prettyprint linenums javascript">
+<div class="tabs type-2">
+	<ul>
+		<li class="is-active"> <!-- 활성화 class="is-active" -->
+			<a href="javascript:;"><span>카드</span></a>
+		</li>
+		<li>
+			<a href="javascript:;"><span>이메일</span></a>
+		</li>
+	</ul>
+</div>
+	</xmp>
+</div>
+<!-- // Code -->
+
+	<h2 class="h2_guide">04-01. Text List - 기본</h2>
+	<!-- View -->
+	<div class="guide_wrap">
+		<div class="list">
+			<ul>
+				<li>소지하고 계시는 GS&amp;POINT 카드의 카드번호를 입력해 주세요.</li>
+				<li>포인트카드는 전면의 카드번호를 입력하시고, 제휴신용 스마트카드는 전면의 카드번호 하단에 포인트카드 번호가 있습니다.</li>
+			</ul>
+		</div>
+	</div>
+	<!-- // View -->
+
+<!-- Code -->
+<div class="d_desc code">
+<xmp class="prettyprint linenums javascript">
+<div class="list">
+	<ul>
+		<li>소지하고 계시는 GS&amp;POINT 카드의 카드번호를 입력해 주세요.</li>
+		<li>포인트카드는 전면의 카드번호를 입력하시고, 제휴신용 스마트카드는 전면의 카드번호 하단에 포인트카드 번호가 있습니다.</li>
+	</ul>
+</div>
+</xmp>
+</div>
+<!-- // Code -->
+
+	<h2 class="h2_guide">04-02. Text List - Hyphen</h2>
+	<!-- View -->
+	<div class="guide_wrap">
+		<div class="list hyphen">
+			<ul>
+				<li>소지하고 계시는 GS&amp;POINT 카드의 카드번호를 입력해 주세요.</li>
+				<li>포인트카드는 전면의 카드번호를 입력하시고, 제휴신용 스마트카드는 전면의 카드번호 하단에 포인트카드 번호가 있습니다.</li>
+			</ul>
+		</div>
+	</div>
+	<!-- // View -->
+
+<!-- Code -->
+<div class="d_desc code">
+<xmp class="prettyprint linenums javascript">
+/*
+ * class="list" class="hyphen" 추가
+ */
+<div class="list hyphen">
+	<ul>
+		<li>소지하고 계시는 GS&amp;POINT 카드의 카드번호를 입력해 주세요.</li>
+		<li>포인트카드는 전면의 카드번호를 입력하시고, 제휴신용 스마트카드는 전면의 카드번호 하단에 포인트카드 번호가 있습니다.</li>
+	</ul>
+</div>
+</xmp>
+</div>
+<!-- // Code -->
+
+	<h2 class="h2_guide">04-03. Text List - dotted</h2>
+	<!-- View -->
+	<div class="guide_wrap">
+		<div class="list dotted">
+			<ul>
+				<li>소지하고 계시는 GS&amp;POINT 카드의 카드번호를 입력해 주세요.</li>
+				<li>포인트카드는 전면의 카드번호를 입력하시고, 제휴신용 스마트카드는 전면의 카드번호 하단에 포인트카드 번호가 있습니다.</li>
+			</ul>
+		</div>
+	</div>
+	<!-- // View -->
+
+<!-- Code -->
+<div class="d_desc code">
+<xmp class="prettyprint linenums javascript">
+/*
+* class="list" class="dotted" 추가
+*/
+<div class="list dotted">
+	<ul>
+		<li>소지하고 계시는 GS&amp;POINT 카드의 카드번호를 입력해 주세요.</li>
+		<li>포인트카드는 전면의 카드번호를 입력하시고, 제휴신용 스마트카드는 전면의 카드번호 하단에 포인트카드 번호가 있습니다.</li>
+	</ul>
+</div>
+</xmp>
+</div>
+<!-- // Code -->
+
+	
+
+
+</div>
+<script type="text/javascript" src="/coding_list/js/pretty.js"></script>
+</body>
+</html>

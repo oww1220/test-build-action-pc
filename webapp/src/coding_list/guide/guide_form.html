@@ -1,0 +1,738 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width">
+	<title>Form Guide</title>
+	<link rel="stylesheet" href="/npass/css/npass.css">
+	<link rel="stylesheet" href="/npass/lib/swiper/swiper-bundle.min.css">
+	<link rel="stylesheet" href="/npass/css/contents.css">
+
+	<!-- 가이드용 -->
+	<link rel="stylesheet" type="text/css" href="/coding_list/css/base.css">
+	<link rel="stylesheet" type="text/css" href="/coding_list/css/pretty.css">
+	<link type="text/css" rel="stylesheet" href="/resource/css/common.css" />
+	<!--//  가이드용 -->
+
+	<script type="text/javascript" src="/npass/lib/jquery/jquery.min.js"></script>
+	<script scr="/npass/js/ui.js"></script>
+	<style>
+		.tag:not(body){
+			align-items : baseline;
+			background : none;
+			display : inline;
+			padding : 0;
+			height : auto;
+		}
+	</style>
+</head>
+<body>
+
+<div id="wrap" class="coding_guide">
+	<h1 class="h1_guide">Form Guide</h1>
+	<h2 class="h2_guide">01-1. Input Box</h2>
+	
+	<!-- View -->
+	<div class="guide_wrap">
+		<div class="field">
+			<div class="control">
+				<input type="text" class="input is-medium" placeholder="This text is value">
+			</div>
+		</div>
+		<div class="field">
+			<div class="control">
+				<input type="text" class="input is-medium" value="This text is value" placeholder="This text is value">
+			</div>
+		</div>
+	</div>
+	<!-- // View -->
+
+	<!-- code -->
+	<div class="d_desc code">
+		<xmp class="prettyprint linenums javascript">
+<input type="text" class="input is-medium" placeholder="This text is value">
+		</xmp>
+	</div>
+	<!-- // code -->
+
+	<h2 class="h2_guide">01-2. Input Box / Disabled, Readonly</h2>
+	<!-- View -->
+	<div class="guide_wrap">
+		<div class="field">
+			<div class="control">
+				<input type="text" class="input is-medium" placeholder="This text is disabled" value="This text is disabled" disabled>
+			</div>
+		</div>
+		<div class="field">
+			<div class="control">
+				<input type="text" class="input is-medium" placeholder="This text is readonly" value="This text is readonly" readonly>
+			</div>
+		</div>
+		<div class="field">
+			<div class="control">
+				<input type="text" class="input is-medium input is-medium is-readonly" placeholder="This text is readonly" value="This text is readonly" readonly>
+			</div>
+		</div>
+	</div>
+	<!-- // View -->
+
+	<!-- code -->
+	<div class="d_desc code">
+		<xmp class="prettyprint linenums javascript">
+/*
+ * readonly일때 배경과 텍스트 색상이 일반과 동일할경우 class="is-readonly"
+ */
+<input type="text" class="input is-medium" placeholder="This text is disabled" value="This text is disabled" disabled>
+<input type="text" class="input is-medium" placeholder="This text is readonly" value="This text is readonly" readonly>
+<input type="text" class="input is-medium input is-medium is-readonly" placeholder="This text is readonly" value="This text is readonly" readonly>
+		</xmp>
+	</div>
+	<!-- // code -->
+
+	<h2 class="h2_guide">01-3. Input Box Add Button</h2>
+	<!-- View -->
+	<div class="guide_wrap">
+		<div class="columns add-util-btn is-mobile">
+			<div class="control column">
+				<input type="text" class="input is-medium">
+			</div>
+			<div class="column is-one-quarter">
+				<button type="button" class="button is-medium is-green">아이디 확인</button>
+			</div>
+		</div>
+	</div>
+	<!-- // View -->
+
+	<!-- code -->
+	<div class="d_desc code">
+		<xmp class="prettyprint linenums javascript">
+<div class="columns add-util-btn is-mobile">
+	<div class="control column">
+		<input type="text" class="input is-medium">
+	</div>
+	<div class="column is-one-quarter">
+		<button type="button" class="button is-medium is-green">아이디 확인</button>
+	</div>
+</div>
+		</xmp>
+	</div>
+	<!-- // code -->
+
+	<h2 class="h2_guide">01-4. Input search</h2>
+	<!-- View -->
+	<div class="guide_wrap">
+		<div class="columns">
+			<div class="column">
+				<div class="control is-search">
+					<input type="text" class="input is-medium" placeholder="도로명/지번 입력">
+					<button class="btn-search">Search</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- // View -->
+
+	<!-- code -->
+	<div class="d_desc code">
+		<xmp class="prettyprint linenums javascript">
+<div class="columns">
+	<div class="column">
+		<div class="control is-search">
+			<input type="text" class="input is-medium" placeholder="도로명/지번 입력">
+			<button class="btn-search">Search</button>
+		</div>
+	</div>
+</div>
+		</xmp>
+	</div>
+	<!-- // code -->
+
+	<h2 class="h2_guide">02-1. Select Box</h2>
+	<!-- View -->
+	<div class="guide_wrap">
+		<div class="field">
+			<div class="select is-medium">
+				<select>
+					<option>Select dropdown</option>
+					<option>With options</option>
+				</select>
+			</div>
+		</div>
+	</div>
+	<!-- // View -->
+
+	<!-- code -->
+	<div class="d_desc code">
+		<xmp class="prettyprint linenums javascript">
+<div class="select is-medium">
+	<select>
+		<option>Select dropdown</option>
+		<option>With options</option>
+	</select>
+</div>
+		</xmp>
+	</div>
+	<!-- // code -->
+
+	<h2 class="h2_guide">02-2. Select Box / Disabled</h2>
+	<!-- View -->
+	<div class="guide_wrap">
+		<div class="field">
+			<div class="select is-medium is-disabled">
+				<select disabled>
+					<option>Select dropdown</option>
+					<option>With options</option>
+				</select>
+			</div>
+		</div>
+	</div>
+	<!-- // View -->
+
+	<!-- code -->
+	<div class="d_desc code">
+		<xmp class="prettyprint linenums javascript">
+<div class="select is-medium is-disabled"> <!-- class="is-disabled" 추가 -->
+	<select disabled>
+		<option>Select dropdown</option>
+		<option>With options</option>
+	</select>
+</div>
+		</xmp>
+	</div>
+	<!-- // code -->
+
+	<h2 class="h2_guide">03-1. Radio Button</h2>
+	<!-- View -->
+	<div class="guide_wrap">
+		<div class="field">
+			<div class="control">
+				<label class="radio">
+					<input type="radio" name="foo">
+					<i></i>
+					<strong>양력</strong>
+				</label>
+				<label class="radio">
+					<input type="radio" name="foo">
+					<i></i>
+					<strong>음력</strong>
+				</label>
+			</div>
+		</div>
+	</div>
+	<!-- // View -->
+
+	<!-- code -->
+	<div class="d_desc code">
+		<xmp class="prettyprint linenums javascript">
+<div class="control">
+	<label class="radio">
+		<input type="radio" name="foo">
+		<i></i>
+		<strong>양력</strong>
+	</label>
+	<label class="radio">
+		<input type="radio" name="foo">
+		<i></i>
+		<strong>음력</strong>
+	</label>
+</div>
+		</xmp>
+	</div>
+	<!-- // code -->
+
+	<h2 class="h2_guide">03-2. Radio Button / Disabled, Readonly</h2>
+	<!-- View -->
+	<div class="guide_wrap">
+		<div class="field">
+			<div class="control">
+				<label class="radio" disabled>
+					<input type="radio" name="foo1" disabled>
+					<i></i>
+					<strong>양력</strong>
+				</label>
+				<label class="radio">
+					<input type="radio" name="foo1">
+					<i></i>
+					<strong>음력</strong>
+				</label>
+			</div>
+		</div>
+	</div>
+	<!-- // View -->
+
+	<!-- code -->
+	<div class="d_desc code">
+		<xmp class="prettyprint linenums javascript">
+<div class="control">
+	<label class="radio" disabled>
+		<input type="radio" name="foo1" disabled>
+		<i></i>
+		<strong>양력</strong>
+	</label>
+	<label class="radio">
+		<input type="radio" name="foo1">
+		<i></i>
+		<strong>음력</strong>
+	</label>
+</div>
+		</xmp>
+	</div>
+	<!-- // code -->
+
+	<h2 class="h2_guide">04-1. Checkbox</h2>
+	<!-- View -->
+	<div class="guide_wrap">
+		<div class="field">
+			<div class="control">
+				<label class="checkbox">
+					<input type="checkbox">
+					<i></i>
+					<strong>E-Mail 발송</strong>
+				</label>
+				<label class="checkbox">
+					<input type="checkbox">
+					<i></i>
+					<strong>전화정보</strong>
+				</label>
+			</div>
+		</div>
+	</div>
+	<!-- // View -->
+
+	<!-- code -->
+	<div class="d_desc code">
+		<xmp class="prettyprint linenums javascript">
+<div class="control">
+	<label class="checkbox">
+		<input type="checkbox">
+		<i></i>
+		<strong>E-Mail 발송</strong>
+	</label>
+	<label class="checkbox">
+		<input type="checkbox">
+		<i></i>
+		<strong>전화정보</strong>
+	</label>
+</div>
+		</xmp>
+	</div>
+	<!-- // code -->
+
+	<h2 class="h2_guide">04-1. Checkbox / Disabled</h2>
+	<!-- View -->
+	<div class="guide_wrap">
+		<div class="field">
+			<div class="control">
+				<label class="checkbox" disabled>
+					<input type="checkbox" disabled>
+					<i></i>
+					<strong>E-Mail 발송</strong>
+				</label>
+				<label class="checkbox">
+					<input type="checkbox">
+					<i></i>
+					<strong>전화정보</strong>
+				</label>
+			</div>
+		</div>
+	</div>
+	<!-- // View -->
+
+	<!-- code -->
+	<div class="d_desc code">
+		<xmp class="prettyprint linenums javascript">
+<div class="control">
+	<label class="checkbox">
+		<input type="checkbox">
+		<i></i>
+		<strong>E-Mail 발송</strong>
+	</label>
+	<label class="checkbox">
+		<input type="checkbox">
+		<i></i>
+		<strong>전화정보</strong>
+	</label>
+</div>
+		</xmp>
+	</div>
+	<!-- // code -->
+
+	<h2 class="h2_guide">05-1. 타이틀 + 입력폼 / 기본</h2>
+	<!-- View -->
+	<div class="guide_wrap">
+		<div class="columns">
+			<div class="column">
+				<label class="label">이름</label>
+				<div class="control">
+					<input type="text" class="input is-medium">
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- // View -->
+
+	<!-- code -->
+	<div class="d_desc code">
+		<xmp class="prettyprint linenums javascript">
+<div class="columns">
+	<div class="column">
+		<label class="label">이름</label>
+		<div class="control">
+			<input type="text" class="input is-medium">
+		</div>
+	</div>
+</div>
+		</xmp>
+	</div>
+	<!-- // code -->
+
+	<h2 class="h2_guide">05-2. 타이틀 + 입력폼 / 필수입력</h2>
+	<!-- View -->
+	<div class="guide_wrap">
+		<div class="columns">
+			<div class="column">
+				<label class="label necessary"><span>필수입력</span>이름</label>
+				<div class="control">
+					<input type="text" class="input is-medium">
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- // View -->
+
+	<!-- code -->
+	<div class="d_desc code">
+		<xmp class="prettyprint linenums javascript">
+/*
+ * .label lass="necessary" 추가
+ *  <span>필수입력</span> 추가
+ */
+<div class="columns">
+	<div class="column">
+		<label class="label necessary"><span>필수입력</span>이름</label>
+		<div class="control">
+			<input type="text" class="input is-medium">
+		</div>
+	</div>
+</div>
+		</xmp>
+	</div>
+	<!-- // code -->
+
+	<h2 class="h2_guide">05-3. 타이틀 + 입력폼 / 2Column / Size Half</h2>
+	<!-- View -->
+	<div class="guide_wrap">
+<div class="columns">
+	<div class="column is-half">
+		<label class="label necessary"><span>필수입력</span>생년월일</label>
+		<div class="control">
+			<input type="text" class="input is-medium">
+		</div>
+	</div>
+	<div class="column is-half">
+		<label class="label necessary"><span>필수입력</span>성별</label>
+		<div class="control">
+			<input type="text" class="input is-medium">
+		</div>
+	</div>
+</div>
+	</div>
+	<!-- // View -->
+
+	<!-- code -->
+	<div class="d_desc code">
+		<xmp class="prettyprint linenums javascript">
+/*
+ * .column class="is-half" 추가
+ * tablet and mobile은 한줄 배치
+ */
+<div class="columns">
+	<div class="column is-half">
+		<label class="label necessary"><span>필수입력</span>생년월일</label>
+		<div class="control">
+			<input type="text" class="input is-medium">
+		</div>
+	</div>
+	<div class="column is-half">
+		<label class="label necessary"><span>필수입력</span>성별</label>
+		<div class="control">
+			<input type="text" class="input is-medium">
+		</div>
+	</div>
+</div>
+		</xmp>
+	</div>
+	<!-- // code -->
+
+	<h2 class="h2_guide">05-4. 타이틀 + 입력폼 / 3Column / Size : half</h2>
+	<!-- View -->
+	<div class="guide_wrap">
+		<div class="columns">
+			<div class="column is-half">
+				<label class="label necessary"><span>필수입력</span>휴대전화번호</label>
+				<div class="control columns">
+					<div class="column is-4">
+						<input type="text" class="input is-medium">
+					</div>
+					<div class="column is-4">
+						<input type="text" class="input is-medium">
+					</div>
+					<div class="column is-4">
+						<input type="text" class="input is-medium">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- // View -->
+
+	<!-- code -->
+	<div class="d_desc code">
+		<xmp class="prettyprint linenums javascript">
+<div class="columns">
+	<div class="column is-half">
+		<label class="label necessary"><span>필수입력</span>휴대전화번호</label>
+		<div class="control columns">
+			<div class="column is-4">
+				<input type="text" class="input is-medium">
+			</div>
+			<div class="column is-4">
+				<input type="text" class="input is-medium">
+			</div>
+			<div class="column is-4">
+				<input type="text" class="input is-medium">
+			</div>
+		</div>
+	</div>
+</div>
+		</xmp>
+	</div>
+	<!-- // code -->
+
+	<h2 class="h2_guide">05-4. 타이틀 + 입력폼 / 3Column / Size : half / 모바일 레이아웃 유지 / 휴대폰 번호(All Input)</h2>
+	<!-- View -->
+	<div class="guide_wrap">
+		<div class="columns">
+			<div class="column is-half">
+				<label class="label necessary"><span>필수입력</span>휴대전화번호</label>
+				<div class="control columns is-mobile">
+					<div class="column is-4">
+						<input type="text" class="input is-medium">
+					</div>
+					<div class="column is-4">
+						<input type="text" class="input is-medium">
+					</div>
+					<div class="column is-4">
+						<input type="text" class="input is-medium">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- // View -->
+
+	<!-- code -->
+	<div class="d_desc code">
+		<xmp class="prettyprint linenums javascript">
+/*
+ * .column class="is-mobile" 추가
+ */
+<div class="columns">
+	<div class="column is-half">
+		<label class="label necessary"><span>필수입력</span>휴대전화번호</label>
+		<div class="control columns is-mobile">
+			<div class="column is-4">
+				<input type="text" class="input is-medium">
+			</div>
+			<div class="column is-4">
+				<input type="text" class="input is-medium">
+			</div>
+			<div class="column is-4">
+				<input type="text" class="input is-medium">
+			</div>
+		</div>
+	</div>
+</div>
+		</xmp>
+	</div>
+	<!-- // code -->
+
+	<h2 class="h2_guide">05-5. 타이틀 + 입력폼 / 3Column / Size : half  / 휴대폰 번호(Selectbox + Input)</h2>
+	<!-- View -->
+	<div class="guide_wrap">
+		<div class="columns">
+			<div class="column is-half">
+				<label class="label">자택 번호<span>(선택)</span></label>
+				<div class="columns phone-box">
+					<div class="column is-4">
+						<div class="control">
+							<div class="select is-medium is-fullwidth">
+								<select>
+									<option value="self" selected="selected">선택</option>
+									<option>010</option>
+								</select>
+							</div>
+						</div>
+					</div>
+					<div class="column is-8 columns is-mobile">
+						<div class="column">
+							<div class="control">
+								<input type="tel" class="input is-medium">
+							</div>
+						</div>
+						<div class="column">
+							<div class="control">
+								<input type="tel" class="input is-medium">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- // View -->
+
+	<!-- code -->
+	<div class="d_desc code">
+		<xmp class="prettyprint linenums javascript">
+<div class="columns">
+	<div class="column is-half">
+		<label class="label">자택 번호<span>(선택)</span></label>
+		<div class="columns phone-box">
+			<div class="column is-4">
+				<div class="control">
+					<div class="select is-medium is-fullwidth">
+						<select>
+							<option value="self" selected="selected">선택</option>
+							<option>010</option>
+						</select>
+					</div>
+				</div>
+			</div>
+			<div class="column is-8 columns is-mobile">
+				<div class="column">
+					<div class="control">
+						<input type="tel" class="input is-medium">
+					</div>
+				</div>
+				<div class="column">
+					<div class="control">
+						<input type="tel" class="input is-medium">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+		</xmp>
+	</div>
+	<!-- // code -->
+
+	<h2 class="h2_guide">06-1. input validation 메세지 / 기본</h2>
+	<!-- View -->
+	<div class="guide_wrap">
+		<div class="columns">
+			<div class="column">
+				<label class="label">이름</label>
+				<div class="control">
+					<input type="text" class="input is-medium">
+				</div>
+			</div>
+		</div>
+		<p class="msg">메세지</p>
+	</div>
+	<!-- // View -->
+
+	<!-- code -->
+	<div class="d_desc code">
+		<xmp class="prettyprint linenums javascript">
+/*
+ * 메세지가 표시될 class="columns" 형재 요소로 <p class="msg">메세지</p> 추가
+ */
+<div class="columns">
+	<div class="column">
+		<label class="label">이름</label>
+		<div class="control">
+			<input type="text" class="input is-medium">
+		</div>
+	</div>
+</div>
+<p class="msg">메세지</p>
+		</xmp>
+	</div>
+	<!-- // code -->
+
+	<h2 class="h2_guide">06-2. input validation 메세지 / Error</h2>
+	<!-- View -->
+	<div class="guide_wrap">
+		<div class="columns is-error">
+			<div class="column">
+				<label class="label">이름</label>
+				<div class="control">
+					<input type="text" class="input is-medium">
+				</div>
+			</div>
+		</div>
+		<p class="msg">메세지</p>
+	</div>
+	<!-- // View -->
+
+	<!-- code -->
+	<div class="d_desc code">
+		<xmp class="prettyprint linenums javascript">
+/*
+ * 메세지가 표시될 class="columns" class="is-error" 추가
+ */
+<div class="columns is-error">
+	<div class="column">
+		<label class="label">이름</label>
+		<div class="control">
+			<input type="text" class="input is-medium">
+		</div>
+	</div>
+</div>
+<p class="msg">메세지</p>
+		</xmp>
+	</div>
+	<!-- // code -->
+
+	<h2 class="h2_guide">06-2. input validation 메세지 / Success</h2>
+	<!-- View -->
+	<div class="guide_wrap">
+		<div class="columns is-success">
+			<div class="column">
+				<label class="label">이름</label>
+				<div class="control">
+					<input type="text" class="input is-medium">
+				</div>
+			</div>
+		</div>
+		<p class="msg">메세지</p>
+	</div>
+	<!-- // View -->
+
+	<!-- code -->
+	<div class="d_desc code">
+		<xmp class="prettyprint linenums javascript">
+/*
+ * 메세지가 표시될 class="columns" class="is-success" 추가
+ */
+<div class="columns is-success">
+	<div class="column">
+		<label class="label">이름</label>
+		<div class="control">
+			<input type="text" class="input is-medium">
+		</div>
+	</div>
+</div>
+<p class="msg">메세지</p>
+		</xmp>
+	</div>
+	<!-- // code -->
+
+
+</div>
+<script type="text/javascript" src="/coding_list/js/pretty.js"></script>
+
+</body>
+</html>

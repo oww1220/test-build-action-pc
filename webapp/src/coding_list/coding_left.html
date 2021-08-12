@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang='ko'>
+<head>
+	<meta http-equiv='Content-Type' content='text/html; charset=utf-8'>
+	<title>코딩진행표</title>
+	<link rel='stylesheet' type='text/css' href='css/reset.css'>
+	<link rel='stylesheet' type='text/css' href='css/base.css'>
+	<script type='text/javascript' src='js/dtree.js'></script>
+	<style>
+		body{padding:20px 10px;}
+		ol {list-style-position: inside; padding-left:2px}
+		li {padding:2px}
+		/* li span {
+
+		} */
+		.t_ing {color:#999999}
+		.t_js {color:brown}
+		.t_app {color:#0042ff}
+		.t_app_js {color:#7395d9}
+		.t_confirm {color:#9600ff}
+		.t_confirm_js {color:#40724b}
+		.t_melon {color:#000}
+		.t_modify {color:#ff0000}
+		img{vertical-align:middle}
+	</style>
+</head>
+<body>
+
+<h1 class='c_left'>코딩진행표</h1>
+<h2 class='c_left'>프로세스</h2>
+<ol>
+	<li><span class='t_ing'>작업진행중</span></li> <!-- 상태메세지 : 일반 -->
+	<li><span class='t_js'>스크립트작업</span></li> <!-- 상태메세지 : 스크립트 -->
+	<li><span class='t_melon'>일반</span></li> <!-- 상태메세지 : 일반 -->
+</ol>
+
+<div class='dtree'>
+	<p><a href='javascript: p.openAll();'><img src='img/btn_expand.gif' alt='Expand All' /></a> <a href='javascript: p.closeAll();'><img src='img/btn_collapse.gif' alt='Collapse All' /></a></p>
+	<script type='text/javascript'>
+		var dir = '/coding_list/guide/'
+		var tree1 = {
+			'WSG' : {
+				'기본결정사항' : {
+					'프로젝트사전 협의사항' : [dir + 'with_back_dev.html',  '일반', 'mainFrame'],
+					'작업 상세규칙'        : [dir + 'checklist_front.html', '일반', 'mainFrame'],
+				},
+				'Guide' : {
+				 	'font'     : [dir + 'guide_font.html',       '일반', 'mainFrame'],
+				 	'Button'   : [dir + 'guide_button.html',     '일반', 'mainFrame'],
+				 	'Form'     : [dir + 'guide_form.html',       '일반', 'mainFrame'],
+				 	'layout'   : [dir + 'guide_layout.html',     '일반', 'mainFrame'],
+				 	'contents' : [dir + 'guide_contents.html',   '일반', 'mainFrame'],
+					// 'Popup' : ['/coding_list/guide/guide_popup.html', '일반', 'mainFrame'],
+					// 'profile' : ['/coding_list/guide/guide_profile.html', '일반', 'mainFrame'],
+					// 'Table' : ['/coding_list/guide/guide_table.html', '일반', 'mainFrame']
+				},
+			}
+		};
+		var p = new dTree('p', tree1);
+		document.write(p);
+	</script>
+
+
+	<p><a href='javascript: d.openAll();'><img src='img/btn_expand.gif' alt='Expand All' /></a> <a href='javascript: d.closeAll();'><img src='img/btn_collapse.gif' alt='Collapse All' /></a></p>
+	<script type='text/javascript'>
+		var dir = '../html/'
+		var tree = {
+			'SYS' : {
+				'HOME' : {
+					'main'                  : [dir + 'main.html',     '완료', 'mainFrame'],
+				},
+				'우주패스 소개' : {
+					'우주패스 소개'                  : [dir + 'pass.html',     '완료', 'mainFrame'],
+				},
+				'우주 티켓부스 이벤트' : {
+					'우주 티켓부스 이벤트'                  : [dir + 'ticket.html',     '완료', 'mainFrame'],
+				},
+				'우주 택배 이벤트' : {
+					'우주 택배 이벤트'                  : [dir + 'delivery.html',     '완료', 'mainFrame'],
+				},
+				'우주X매드몬스터' : {
+					'우주X매드몬스터'                  : [dir + 'mad.html',     '완료', 'mainFrame'],
+				},
+			},
+		}
+		var d = new dTree('d', tree);
+		document.write(d);
+	</script>
+ 
+</div>
+
+</body>
+</html>
+

@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="ko">
+	@@include('./include/head.html')
+<body>
+	<div id="wrap">
+		<!-- Header -->
+		@@include('./include/header.html')
+		<!-- // Header -->
+
+		<!-- intro -->
+		<div class="intro-overlay">
+			<div class="intro-video">
+				<div id="lottie00_01"></div>
+			</div>
+		</div>
+		<!-- //intro -->
+
+		<canvas id="webgl-universe"></canvas>
+
+		<div id="content">
+			<!--main video-->
+			<article class="mainVideo">
+				<div>
+					<video muted autoplay loop playsinline>
+						<source src="" type="video/mp4">
+						<strong>Your browser does not support the video teg.</strong>
+					</video>
+				</div>
+			</article>
+			<!--tab--> 
+			<article class="mainTab">
+				<!-- tab title-->
+				<ul class="moveLeft aos-tab">
+					<li class="left on">
+						<a href="javascript:;">T우주란?</a>
+					</li>
+					<li class="right">
+						<a href="javascript:;">우주패스란?</a>
+					</li>
+				</ul>
+				<!-- tab content -->
+				<div class="tabContent">
+					<ul>
+						<!--left tab-->
+						<li class="leftTab">
+							<dl>
+								<dt data-aos="fade-up">우리는 이제<br />우주로 갑니다</dt>
+								<dd data-aos="fade-up">
+									이곳에선 부담 없이 좋아하는 커피와 빵을 고르고,<br />
+									선곡 고민 없이 취향에 맞는 음악을 들을 수 있어요.<br />
+									<br />
+									배송비 없이 해외 직구를 마음껏 즐기고,<br />
+									용량 걱정 없이 일상을 클라우드에 남길 수도 있죠.<br />
+									<br />
+									지루할 틈 없이 최애 드라마를 정주행하면서<br />
+									좋아하는 메뉴를 배달로 즐기는 주말은 어때요?<br />
+									<br />
+									아주 좋아하는 것, 자주 필요한 것을<br />
+									더 가볍게 누리는 새로운 스케일의 구독 생활,<br />
+									이곳은 우주입니다.<br />
+									<br />
+									통신사 상관없이 T월드에서<br />
+									당신의 우주를 만나보세요.
+								</dd>
+							</dl>
+							<div class="universe">
+								<dl>
+									<dt data-aos="fade-up">모두의 구독 유니버스</dt>
+									<dd data-aos="fade-up"><img src="./../images/bi.png" alt="OLKL"></dd>
+								</dl>
+								<a href="#" class="arrowBtn" data-aos="fade-up">구독하러 가기</a>	
+							</div>
+							<h5 data-aos="fade-up">EVENT</h5>
+							<ul>
+								<li data-aos="fade-up">
+									<a href="/ticket.html" class="add-svg">
+										<dl>
+											<dt>우주 티켓부스</dt>
+											<dd>이벤트 참여하기</dd>
+										</dl>
+										<span>line</span>
+										<div class="svg-W">
+											<div id="lottie10"></div>
+										</div>
+									</a>
+								</li>
+								<li data-aos="fade-up">
+									<a href="/delivery.html" class="add-svg">
+										<dl>
+											<dt>우주 택배</dt>
+											<dd>이벤트 참여하기</dd>
+										</dl>
+										<span>line</span>
+										<div class="svg-W">
+											<div id="lottie09"></div>
+										</div>
+									</a>
+								</li>
+							</ul>
+							<div class="pcQr" data-aos="fade-up">
+								<div>
+									<div><img src="../images/qr_img.png" alt="QR코드"></div>
+									<p>이벤트 참여는 모바일로만 가능합니다.<br />모바일로 접속해 참여해주세요!</p>
+								</div>
+								<a href="#" class="goBtn">공유하기</a>
+							</div>
+						</li>
+						<!--right tab-->
+						<li class="rightTab">
+							<dl>
+								<dt data-aos="fade-up">첫 달은 부담없이<br />구독해 보세요</dt>
+								<dd data-aos="fade-up">
+									여러분의 생활 패턴에 맞게 두 가지로<br /> 준비된 구독 혜택, 우주패스를 사용해 보세요.<br /><br />첫 달은 훨씬 저렴한 가격으로<br />T월드에서 만날 수 있어요!
+								</dd>
+							</dl>
+							<ul>
+								<li data-aos="fade-up">
+									<a href="/pass.html">
+										<span>one</span>
+										<dl>
+											<dt>우주패스 all</dt>
+											<dd>월 9,900원<br />
+												<strong>첫 달 1,000원</strong>
+											</dd>
+										</dl>
+										<div>구독 혜택 알아보기</div>
+									</a>
+								</li>
+								<li data-aos="fade-up">
+									<a href="/pass.html">
+										<span>one</span>
+										<dl>
+											<dt>우주패스 mini</dt>
+											<dd class="mini">월 4,900원<br />
+												<strong>첫 달 100원</strong>
+											</dd>
+										</dl>
+										<div>구독 혜택 알아보기</div>
+									</a>
+								</li>
+							</ul>
+							<!--partner list-->
+							<div class="mainPartner">
+								<h5 data-aos="fade-up">T우주 파트너들이 궁금하신가요?</h5>
+								<!-- main logo-->
+								<div class="mainPlanet" data-aos="fade-up">
+									<ul>
+										<li data-layer="rocket-obj-19" class="on"><div><img src="../images/logo_one_amazon_l.png" alt="아마존"></div></li>
+										<li data-layer="rocket-obj-08"><div><img src="../images/planet_starbucks.png" alt="스타벅스"></div></li>
+										<li data-layer="rocket-obj-03"><div><img src="../images/logo_one_google_l.png" alt="구글원"></div></li>
+										<li data-layer="rocket-obj-09"><div><img src="../images/img-planet-tmb-emart_l.png" alt="이마트"></div></li>
+										<li data-layer="rocket-obj-05"><div><img src="../images/logo_one_bm_l.png" alt="배달의민족"></div></li>
+										<li data-layer="rocket-obj-06"><div><img src="../images/planet_paris.png" alt="파리바게트"></div></li>
+									</ul>
+								</div>
+								<!--swiper-->
+								<div class="swiper-container tabSlide" data-aos="fade-up">
+									<ul class="swiper-wrapper">
+										<li class="swiper-slide on" data-layer="rocket-obj-19">
+											<a href="javascript:;">
+												<img src="../images/logo_one_amazon.png" alt="amazon">
+												<span>one</span>
+											</a>
+										</li>
+										<li class="swiper-slide" data-layer="rocket-obj-08">
+											<a href="javascript:;">
+												<img src="../images/img-planet-tmb-star.png" alt="스타벅스">
+												<span>one</span>
+											</a>
+										</li>
+										<li class="swiper-slide" data-layer="rocket-obj-03">
+											<a href="javascript:;">
+												<img src="../images/logo_one_google.png" alt="구글">
+												<span>one</span>
+											</a>
+										</li>
+										<li class="swiper-slide" data-layer="rocket-obj-09">
+											<a href="javascript:;">
+												<img src="../images/img-planet-tmb-emart.png" alt="이마트">
+												<span>one</span>
+											</a>
+										</li>
+										<li class="swiper-slide" data-layer="rocket-obj-05">
+											<a href="javascript:;">
+												<img src="../images/logo_one_bm.png" alt="배달의민족">
+												<span>one</span>
+											</a>
+										</li>
+										<li class="swiper-slide" data-layer="rocket-obj-06">
+											<a href="javascript:;">
+												<img src="../images/logo_paris_m.png" alt="파리바게트">
+												<span>one</span>
+											</a>
+										</li>
+									</ul>
+								</div>
+								<!-- btn -->
+								<div class="sliderBtn">
+									<a class="swiper-button-prev" href="javascript:;">이전</a>
+									<a class="swiper-button-next" href="javascript:;">다음</a>
+								</div>
+								<div class="moreBenefit" data-aos="fade-up">
+									<a href="javascript:;" class="arrowBtn" data-layer="rocket-obj-19">혜택 자세히 보기</a>								
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</article>
+		</div>
+		@@include('./include/layer-rocket-main.html')
+		@@include('./include/footer.html')
+	</div>
+</body>
+	@@include('./include/footer_js.html')
+	
+<script>
+	// Main tab slide
+
+	function swiperPartner() {
+		var swiperPartnerIns = null;
+		if($('.tabSlide .swiper-slide').length >= 7) {
+			swiperPartnerIns = new Swiper('.tabSlide', {
+				// scrollbarHide: true,
+				// slidesPerView: 'auto',
+				// spaceBetween: 0,
+				// speed : 1000,
+
+				scrollbarHide: true,
+				slidesPerView: 6,
+				slidesPerGroup : 6,
+				loopFillGroupWithBlank : true,
+				spaceBetween: 14,
+			});
+		}
+		$('.mainTab .moveLeft .right').on('click', function(){
+			if(swiperPartnerIns) swiperPartnerIns.update();
+		});
+	}
+	swiperPartner();
+	
+
+	// Main tab slide image change
+	function thumbs () {
+		
+		$(".tabSlide .swiper-slide").on('click', function(){
+			var targetLayer = $(this).data('layer');
+			var $target = $('.moreBenefit .arrowBtn');
+			var clickIndex = $(this).index();
+
+			$target.removeData('layer');
+            $target.attr('data-layer', targetLayer);
+			$(this).addClass("on").siblings().removeClass("on");
+			$(".mainPlanet ul li").eq(clickIndex).addClass("on").siblings().removeClass("on");
+		});
+
+		// 혜택 자세히보기 이벤트 핸들러
+		$(document).on('click', '.moreBenefit .arrowBtn', function(e) {
+            var layer = '.' + $(e.target).data('layer');
+            if (!CommonUI.LayerRocket.eventChkFlag) return;
+            CommonUI.LayerRocket.cashGenerator = CommonUI.LayerRocket.open(layer, function(layer) {
+                console.log(layer + ': layer open!');
+            })();
+            CommonUI.Async.generaterRun(CommonUI.LayerRocket.cashGenerator);
+        });
+	}
+	thumbs()
+
+	function slideBtn(){
+		$(".swiper-button-prev").click(function(){
+			var currentIndex = $(".tabSlide ul .on").index();
+			$(".tabSlide ul li").eq(currentIndex - 1).addClass("on").siblings().removeClass("on");
+			$(".mainPlanet ul li").eq(currentIndex -1).addClass("on").siblings().removeClass("on")
+
+			var targetLayer = $(".tabSlide ul .on").data('layer');
+			var $target = $('.moreBenefit .arrowBtn');
+			var clickIndex = $(".tabSlide ul .on").index();
+
+			$target.removeData('layer');
+            $target.attr('data-layer', targetLayer);
+		});
+		$(".swiper-button-next").click(function(){
+			var currentIndex = $(".tabSlide ul .on").index();
+			var listLength = $(".tabSlide ul li").length;
+			
+			if(currentIndex >= listLength-1){
+				$(".tabSlide ul li").eq(0).addClass("on").siblings().removeClass("on");
+				$(".mainPlanet ul li").eq(0).addClass("on").siblings().removeClass("on");
+
+			}else{
+				$(".tabSlide ul li").eq(currentIndex + 1).addClass("on").siblings().removeClass("on");
+				$(".mainPlanet ul li").eq(currentIndex + 1).addClass("on").siblings().removeClass("on")
+
+			}
+			
+			var targetLayer = $(".tabSlide ul .on").data('layer');
+			var $target = $('.moreBenefit .arrowBtn');
+			var clickIndex = $(".tabSlide ul .on").index();
+
+			$target.removeData('layer');
+            $target.attr('data-layer', targetLayer);
+		});
+
+		
+		// 혜택 자세히보기 이벤트 핸들러
+		$(document).on('click', '.moreBenefit .arrowBtn', function(e) {
+            var layer = '.' + $(e.target).data('layer');
+            if (!CommonUI.LayerRocket.eventChkFlag) return;
+            CommonUI.LayerRocket.cashGenerator = CommonUI.LayerRocket.open(layer, function(layer) {
+                console.log(layer + ': layer open!');
+            })();
+            CommonUI.Async.generaterRun(CommonUI.LayerRocket.cashGenerator);
+        });
+		
+	}
+	slideBtn();
+
+</script>
+</html>

@@ -1,0 +1,323 @@
+@charset"UTF-8"
+@font-face 
+	font-family: 'Noto Sans KR'
+	src: url('../font/Noto_Sans_KR/NotoSansKR-Regular.otf') format('opentype')
+
+@font-face 
+	font-family: 'Noto Sans KR bold'
+	src: url('../font/Noto_Sans_KR/NotoSansKR-Bold.otf') format('opentype')
+
+@font-face 
+	font-family: 'Noto Sans KR black'
+	src: url('../font/Noto_Sans_KR/NotoSansKR-Black.otf') format('opentype')
+
+@font-face 
+	font-family: 'Noto Sans KR medium'
+	src: url('../font/Noto_Sans_KR/NotoSansKR-Medium.otf') format('opentype')
+
+
+*,:before,:after
+	margin: 0
+	padding: 0
+	border: 0
+	font-style: normal
+	vertical-align: top
+	box-sizing: border-box
+	-moz-box-sizing: border-box
+	-webkit-box-sizing: border-box
+
+
+html
+	-webkit-font-smoothing: antialiased
+	
+
+table
+	width: 100%
+	border-collapse: collapse
+	border-spacing: 0
+
+th,td
+	vertical-align: middle
+	word-break: break-word
+	white-space: nowrap
+
+ul,ol,dl
+	list-style: none
+	word-break: keep-all
+
+hr
+	display: none
+
+caption,figcaption,legend
+	overflow: hidden
+	position: absolute
+	z-index: -1
+	height: 0
+	visibility: hidden
+
+
+h1,h2,h3,h4,h5,h6,strong
+	font-weight: 500
+
+
+a
+	color: #333
+	text-decoration: none
+
+a:hover,a:focus
+	text-decoration: none
+
+
+button
+	padding: 0
+	border: 0
+	cursor: pointer
+	background: none
+	vertical-align: middle
+	appearance: none
+	font-family: 'Noto Sans KR',"맑은고딕",sans-serif
+	color: #747474
+	outline: none
+
+
+select
+	appearance: none
+	color: #747474
+	font-family: 'Noto Sans KR',"맑은고딕",sans-serif
+	min-width: 120px
+	height: 36px
+	padding-left: 7px
+	padding-right: 40px
+	font-size: 16px
+	line-height: 34px
+	vertical-align: top
+	background-color: #fff
+	border: 1px solid #d1d1d1
+
+select:focus
+	border: 1px solid #000
+
+select:disabled
+	background-color: #f2f2f2
+	color: #999
+
+select::-ms-expand
+	display: none
+
+
+input
+	margin: 0
+	padding: 0
+	font-family: inherit
+	font-size: inherit
+	color: #333
+	line-height: 17px
+	vertical-align: top
+	-webkit-appearance: none
+	border-radius: 0
+	outline: none
+	&[type="text"],
+	&[type="password"],
+	&[type="tel"],
+	&[type="file"]
+		height: 36px
+		padding: 010px
+		font-size: 16px
+		font-weight: 100
+		line-height: 34px
+		background-color: #fff
+		border: 1px solid #d1d1d1
+		box-sizing: border-box
+		-webkit-appearance: none
+		border-radius: 0
+	&[type="text"]:disabled,
+	&[type="text"][readonly],
+	&[type="password"]:disabled,
+	&[type="password"][readonly],
+	&[type="tel"]:disabled,
+	&[type="tel"][readonly],
+	&[type="file"]:disabled,
+	&[type="file"][readonly]
+		background-color: #f2f2f2
+		color: #999
+	&[type="radio"]
+		position: absolute
+		z-index: -1
+		visibility: hidden
+		width: 18px
+		height: 18px
+	&[type="checkbox"]
+		position: absolute
+		z-index: -1
+		visibility: hidden
+		width: 18px
+		height: 18px
+		&+label
+			position: relative
+			display: inline-block
+			overflow: hidden
+			width: 18px
+			height: 18px
+			text-indent: -9999em
+			border: 1px solid #ccc
+			vertical-align: middle
+			cursor: pointer
+		&:checked+label
+			border: 1px solid #0091ff
+			background-color: #0091ff
+			&:after
+				content: ''
+				position: absolute
+				top: 4px
+				left: 6px
+				width: 4px
+				height: 6px
+				border-right: 1px solid #ffffff
+				border-bottom: 1px solid #ffffff
+				transform: rotate(45deg)
+	&[type="radio"]+label
+		position: relative
+		display: inline-block
+		overflow: hidden
+		height: 18px
+		padding-left: 22px
+		color: #444
+		font-size: 14px
+		line-height: 18px
+		vertical-align: middle
+		cursor: pointer
+		&:after
+			content: ''
+			position: absolute
+			left: 0
+			top: 0
+			width: 18px
+			height: 18px
+			text-indent: -9999em
+			border: 1px solid #ccc
+			border-radius: 9px
+
+		&:checked+label
+			color: #000
+
+			&:after
+				border: 1px solid #000
+
+			&:before
+				content: ''
+				position: absolute
+				left: 4px
+				top: 4px
+				width: 10px
+				height: 10px
+				text-indent: -9999em
+				background: #000
+				border-radius: 6px
+
+
+	&[type="radio"].noText+label
+		position: relative
+		display: inline-block
+		overflow: hidden
+		width: 18px
+		height: 18px
+		text-indent: -9999em
+		border: 1px solid #ccc
+		vertical-align: middle
+		cursor: pointer
+
+		&:checked+label
+			border: 1px solid #40cecd
+
+			&:after
+				content: ''
+				position: absolute
+				top: 0
+				left: 5px
+				width: 6px
+				height: 12px
+				border-right: 2px solid #40cecd
+				border-bottom: 2px solid #40cecd
+				transform: rotate(45deg)
+
+textarea
+	-webkit-appearance: none
+	border-radius: 0
+	border: 1px solid #d1d1d1
+	color: #222
+	font-weight: 300
+	background: #fff
+	padding: 15px 10px
+	font-family: 'Noto Sans KR',"맑은고딕",sans-serif
+	font-size: 16px
+	width: 100%
+	min-height: 80px
+	box-sizing: border-box
+	resize: none
+
+
+::placeholder
+	color: #c9c9c9
+	font-weight: bold
+	opacity: 1
+	font-family: 'Noto Sans KR',"맑은고딕",sans-serif
+
+::-ms-input-placeholder
+	color: #a1a2a6
+	font-weight: 100
+
+/*input[type=time]: : -webkit-datetime-edit-ampm-fielddisplay: none*/
+
+body
+	font-family: 'Noto Sans KR',"맑은고딕",sans-serif
+	font-weight: 300
+	font-size: 16px
+	color: #fff
+	line-height: normal
+	-webkit-text-size-adjust: 100%
+	-moz-text-size-adjust: 100%
+	-ms-text-size-adjust: 100%
+	background-color: #000
+
+
+#wrap
+	min-width: 200px
+	height: 100%
+	overflow-x: hidden
+
+
+/*요소숨김*/
+.blind
+	overflow: hidden
+	position: absolute
+	z-index: -1
+	height: 0
+	visibility: hidden
+@keyframes opacity
+	0%
+		opacity: 0
+	100%
+		opacity: 1
+@keyframes antiOpacity
+	0%
+		opacity: 1
+	100%
+		opacity: 0
+@keyframes rotateOne
+	0%
+		transform: rotate(0)	
+	100%
+		transform: rotate(360deg)
+@keyframes rocket
+	0%
+		transform: translateY(200%)
+	80%
+		opacity: 1
+	100%
+		transform: translateY(0)
+		opacity: 0
+@keyframes ticketing
+	0%
+		transform: translateY(100%)
+	100%
+		transform: translateY(0)
