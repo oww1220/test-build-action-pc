@@ -222,6 +222,151 @@ header nav > div {
     } 
 }
 
+/* 파트너스 투어 */
+.tour {
+    padding-bottom: 52px;
+    &:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 1000px;
+        background: url('../images/tour-cont-bg.png') no-repeat center;
+        background-size: cover;
+        z-index: 0;
+    }
+    .btn-back {
+        width: 305px;
+        height: 56px;
+        display: inline-flex;
+        @include font20;
+        align-items: center;
+        justify-content: center;
+        background-color: #fff;
+        border-radius: 30px;
+        position: relative;
+        color: #000;
+    }
+    .tourTop {
+        margin-bottom: 30px;
+        text-align: center;
+        .subTitle {
+            dt {
+                line-height: 1.6;
+            }
+            dd {
+                display: inline-block;
+                line-height: 1.2;
+                position: relative;
+                &:after {
+                    content: "";
+                    width: 28px;
+                    height: 36px;
+                    position: absolute;
+                    top: -5px;
+                    right: 0px;
+                    background: url('../images/stars_icon.png') no-repeat 0 0;
+                    background-size: 100%;
+                }
+            }
+        }
+        .ribbon {
+            background: url('../images/tour-cont-ribbon.png') center center no-repeat;
+            background-size: 436px;
+            width: 436px;
+            height: 90px;
+            margin: 29px auto 0;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding-top: 15px;
+            box-sizing: border-box;
+            span {
+                display: block;
+                @include font24;
+            }
+        }
+        .tourTop-info {
+            margin-top: 50px;
+            P {
+                @include font20();
+                text-align: center;
+                + p {
+                    margin-top: 30px;
+                }
+            }
+        }
+        .btn-back {
+            margin-top: 37px;
+        }
+    }
+
+    .tourCont {
+        padding: 170px 0 0;
+        text-align: center;
+        .tit {
+            position: relative;
+            @include font40;
+            line-height: 1.5;
+            text-align: center;
+            color: #ff404e;
+            &:before {
+                content: "";
+                width: 100px;
+                height: 76.8px;
+                position: absolute;
+                top: -95px;
+                left:50%;
+                margin-left: -50px;
+                background: url('../images/tour-cont-universe.png') no-repeat 0 0;
+                background-size: 100px;
+            }
+        }
+        .btn-back {
+            margin-top: 60px;
+        }
+    }
+    .tourCont-list {
+        width: 712px;
+        margin: 0 auto;
+        > li {
+            margin-top: 20px;
+        }
+        .tourCont-in {
+            position: relative;
+            border: 1px solid #3617ce;
+            border-radius: 30px;
+            background-color: rgba(54, 23, 206, 0.24);
+            padding: 25px 5px;
+            > strong {
+                display: block;
+                text-align: center;
+                @include font28;
+            }
+            .cover {
+                width: 153px;
+                margin: 40px auto 0;
+                img {
+                    width: 100%;
+                }
+            }
+            .infos {
+                margin-top: 40px;
+                p {
+                    text-align: center;
+                    @include font20;
+                    color: #7f7d8f;
+                    + p{
+                        margin-top:40px;
+                    }
+                }
+            }
+        }
+    }
+}
+
 
 body.overlay-hidden {
     overflow: hidden;
