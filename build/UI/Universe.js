@@ -35,7 +35,7 @@ export class Stage {
         const windowWidth = window.innerWidth;
         const windowHeight = window.innerHeight;
         if (!this.isInitialized) {
-            this.camera = new window.THREE.PerspectiveCamera(150, this.renderParam.width / this.renderParam.height);
+            this.camera = new window.THREE.PerspectiveCamera(100, this.renderParam.width / this.renderParam.height);
         }
         this.camera.aspect = windowWidth / windowHeight;
         this.camera.updateProjectionMatrix();
