@@ -1,3 +1,123 @@
+/* 컴파일되는
+	* 여러 줄
+	* 주석 */
+// variable
+$frontColor: #00cdff;
+$backColor: #7d14ff;
+$black: #000000;
+$white: #ffffff;
+$bgColor: #0d1c2f;
+$bgColor02: #6414ff;
+$bgColor03: #171718;
+$bgColor04: #0e1c30;
+$bgColor05: #5e45d8;
+$bgColor06: #1a1a1a;
+$lightGray: #575757;
+$wrongColor: #ff404e;
+$point: #ff404e;
+$darkGray: #c9c9c9;
+$mainColor: #3617ce;
+$oneColor: #8674e2;
+
+
+//mixin
+@mixin NotoSans () {
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+@mixin colorGradation() {
+	color: $white;
+	font-family: 'Noto Sans KR black', sans-serif;
+}
+@mixin borderGradient() {
+	background-color: rgba(54, 23, 206, 0.24);
+	border: 1px solid $mainColor;
+}
+@mixin font12() {
+	font-size: 12px;
+	letter-spacing: -0.24px;
+	line-height: 1.4;
+	font-family: 'Noto Sans KR bold';
+}
+@mixin font14() {
+	font-size: 14px;
+	letter-spacing: -0.28px;
+	line-height: 1.4;
+	font-family: 'Noto Sans KR bold';
+}
+@mixin font16Gradation() {
+	@include colorGradation();
+	font-size: 16px;
+	line-height: 25px;
+	letter-spacing: -0.32px;
+}
+@mixin font16() {
+	font-size: 16px;
+	line-height: 25px;
+	letter-spacing: -0.32px;
+	font-family: 'Noto Sans KR bold';
+}
+@mixin font20() {
+	font-size: 20px;
+	line-height: 1.6;
+	letter-spacing: -0.4px;
+	font-family: 'Noto Sans KR bold';
+}
+@mixin font24Gradation() {
+	@include colorGradation();
+	font-size: 24px;
+	line-height: 1.6;
+	letter-spacing: -0.48px;
+}
+@mixin font24() {
+	font-size: 24px;
+	line-height: 1.6;
+	letter-spacing: -0.48px;
+	font-family: 'Noto Sans KR black';
+}
+@mixin font28() {
+	font-size: 28px;
+	line-height: 1.6;
+	letter-spacing: -0.56px;
+	font-family: 'Noto Sans KR bold';
+}
+@mixin font40() {
+	@include colorGradation();
+	font-size: 40px;
+	line-height: 1.2;
+	letter-spacing: -0.8px;
+}
+@mixin font44() {
+	@include colorGradation();
+	font-size: 44px;
+	line-height: 1.1;
+	letter-spacing: -0.88px;
+}
+@mixin font80() {
+	@include colorGradation();
+	font-size: 80px;
+	line-height: 1.3;
+	letter-spacing: -1.6px;
+}
+@mixin moreArrow() {
+	width: 10px;
+	height: 10px;
+	border-top: 1px solid #c9c9c9;
+	border-right: 1px solid #c9c9c9;
+	transform: rotate(45deg);
+}
+
+@mixin BreakWord {
+    word-break: break-all;
+    word-wrap: break-word;
+}
+
+@mixin Hide_txt {
+    font: 0/0 a;
+}
+
+
+
 #webgl-universe {
     background: radial-gradient(circle farthest-corner at center top, #000, #000);
     position: fixed;
@@ -145,7 +265,7 @@ body.overlay-hidden {
     }
 
     .layer-cont {
-		width: 710px;
+		width: 510px;
 		max-height: 100vh;
         //height: auto;
         background-color: #fff;
@@ -156,7 +276,9 @@ body.overlay-hidden {
         border-radius: 60px;
         transition: transform 1s;
         transform: translateY(120%);
-		
+		&.w600 {
+            width: 600px;
+        }
 		&::-webkit-scrollbar {
 			width:4px; 
 			height:4px;
@@ -167,7 +289,7 @@ body.overlay-hidden {
         .layer-cont-in {
             color: #000;
             //padding: 20px;
-            padding-bottom: 30px;
+            padding-bottom: 61px;
             opacity: 1;
         }
         &.active {
@@ -255,8 +377,6 @@ body.overlay-hidden {
                 color: #575757;
             }
         }
-
-
         .benefitView-cont {
             margin-top: 20px;
             > dl {
@@ -290,6 +410,17 @@ body.overlay-hidden {
                 width: 249px;
                 margin-left: 0;
                 text-align: center;
+            }
+        }
+        > div {
+            text-align: center;
+            dl {
+                dt {
+                    text-align: center;
+                }
+                dd {
+                    text-align: center;
+                }
             }
         }
     
@@ -363,6 +494,116 @@ body.overlay-hidden {
             display: block;
         }
 
+    }
+
+    .luckyView {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        .luckyView-top {
+            background: url('../images/luckyView-particle.png') no-repeat center 5vw;
+            background-size: contain;
+            margin-top: 47px;
+            .sub-tit {
+                @include font20;
+                color: #000;
+                text-align: center;
+            }
+            h4 {
+                @include font60;
+                text-align: center;
+                color: #3617ce;
+                margin-top: 10px;
+            }
+            .cover {
+                padding: 0 8%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                img {
+                    width: 80%;
+                    max-width:400px;
+                }
+            }
+            ul {
+                margin-top:28.6px;
+                li {
+                    @include font20;
+                    text-align: center;
+                    + li {
+                        margin-top:10px;
+                    }
+                }
+            }
+        }
+
+        .luckyView-list {
+            padding: 0 8%;
+            .list-tit {
+                background: url('../images/luckyView-ribbon.png') center center no-repeat;
+                background-size: 327px;
+                width: 327px;
+                height: 67.5px;
+                margin: 50.5px auto 13px;
+                text-align: center;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                box-sizing: border-box;
+                span {
+                    display: block;
+                    @include font24;
+                    color: #fff;
+                    position: relative;
+                    top: -5px;
+                }
+            }
+            .list-conts {
+                > ul {
+                    flex-wrap: wrap;
+                    display: flex;
+                    width: 440px;
+                    margin: 0 auto;
+                    li {
+                        width: 210px;
+                        box-sizing: border-box;
+                        background: url('../images/luckyView-bg-stars.png') no-repeat center center;
+                        background-size: cover;
+                        border-radius: 30px;
+                        overflow: hidden;
+                        margin-top: 20px;
+                        &:nth-child(odd) {
+                            margin-right: 10px;
+                        }
+                        &:nth-child(even) {
+                            margin-left: 10px;
+                        }
+                    }
+                }
+                .cont-in {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    flex-flow: column;
+                    padding: 30px 0;
+                    .cover {
+                        padding: 0 30px;
+                        img {
+                            width: 100%;
+                        }
+                    }
+                    .infos {
+                        padding: 0 5px;
+                        margin-top: 30px;
+                        text-align: center;
+                        @include font20;
+                        @include BreakWord;
+                        color:#fff;
+                        line-height: 1.4;
+                    }
+                }
+            }
+        }
     }
 
     &.active {
