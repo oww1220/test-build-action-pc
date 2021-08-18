@@ -748,7 +748,7 @@ body { font-size: 20px; min-width: 1024px; }
 
 .delivery .deliveryStep > ul > li #lottie04 { width: 500px; height: 500px; position: absolute; top: 0; left: 50%; -webkit-transform: translateX(-50%); transform: translateX(-50%); }
 
-.delivery .deliveryStep > ul > li #lottie05 { width: 500px; height: 500px; position: absolute; top: 0; left: 50%; -webkit-transform: translateX(-50%); transform: translateX(-50%); }
+.delivery .deliveryStep > ul > li #lottie05 { width: 500px; height: 500px; position: absolute; top: 50px; left: 50%; -webkit-transform: translateX(-50%); transform: translateX(-50%); }
 
 .delivery .deliveryStep > ul > li #lottie06 { width: 500px; height: 500px; position: absolute; top: 0; left: 50%; -webkit-transform: translateX(-50%); transform: translateX(-50%); }
 
