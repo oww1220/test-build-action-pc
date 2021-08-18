@@ -326,6 +326,8 @@ body { font-size: 20px; min-width: 1024px; }
 
 .benefitView div dl dd { margin-top: 20px; font-size: 20px; line-height: 1.6; letter-spacing: -0.4px; font-family: 'Noto Sans KR bold'; color: #000000; font-family: 'Noto Sans KR black'; }
 
+.benefitView div dl dd span { display: block; font-size: 14px; letter-spacing: -0.28px; line-height: 1.4; font-family: 'Noto Sans KR bold'; color: #ff404e; }
+
 .benefitView div dl dd p { margin-top: 10px; }
 
 .benefitView div dl dd p:first-child { margin-top: 0; }
