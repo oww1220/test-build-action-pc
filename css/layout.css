@@ -670,7 +670,7 @@ body { font-size: 20px; min-width: 1024px; }
 #content.ticketInfo .ticketAniWrap .ticketAni.on .winning .mms { font-size: 12px; font-family: 'Noto Sans KR black'; color: #000000; line-height: 1.4; letter-spacing: -0.24px; margin-top: 51px; }
 
 /************** delivery ***************/
-.delivery .deliveryEvent { text-align: center; background: url("../images/Delivery_KV_1.png") no-repeat 0 0; background-position: center 170px; padding: 0 8%; }
+.delivery .deliveryEvent { text-align: center; background: url("../images/delivery_KV_1.png") no-repeat 0 0; background-position: center 170px; padding: 0 8%; }
 
 .delivery .deliveryEvent .deliverContent { padding-top: 600px; }
 
