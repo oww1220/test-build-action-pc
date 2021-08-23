@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="ko">
-	@@include('./include/head.html')
+	@@include('./../include/head.html')
 <body>
 	<div id="wrap">
 		<!-- Header -->
-		@@include('./include/header.html')
+		@@include('./../include/header.html')
 		<!-- // Header -->
 
 		<canvas id="webgl-universe"></canvas>
@@ -131,7 +131,7 @@
 			</article>
 			<div class="pcQr" data-aos="fade-up">
 				<div>
-					<div><img src="../images/qr_img.png" alt="QR코드"></div>
+					<div><img src="../../images/qr_img.png" alt="QR코드"></div>
 					<p>이벤트 참여는 모바일로만 가능합니다.<br />모바일로 접속해 참여해주세요!</p>
 				</div>
 				<a href="#" class="goBtn">공유하기</a>
@@ -154,11 +154,11 @@
 				</ul>
 			</article>
 		</div>
-		@@include('./include/layer-rocket-ticket.html')
-		@@include('./include/footer.html')
+		@@include('./../include/layer-rocket-ticket.html')
+		@@include('./../include/footer.html')
 	</div>
 </body>
-	@@include('./include/footer_js.html')
+	@@include('./../include/footer_js.html')
 	<script>
 		function confirm(){
 			$(".alertWin .goBtn").click(function(){

@@ -106,7 +106,7 @@ export class Mesh {
 
             geometry.vertices.push(star);
         }
-        const texture = new window.THREE.TextureLoader().load('../images/ico-star.png');
+        const texture = new window.THREE.TextureLoader().load('../../images/ico-star.png');
         const material = new window.THREE.PointsMaterial({
             color: 0xffffff,
             size: 1,

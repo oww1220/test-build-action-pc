@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="ko">
-	@@include('./include/head.html')
+	@@include('./../include/head.html')
 <body>
 	<div id="wrap">
 		<!-- Header -->
-		@@include('./include/header.html')
+		@@include('./../include/header.html')
 		<!-- // Header -->
 
 		<canvas id="webgl-universe"></canvas>
@@ -13,7 +13,7 @@
 			<!--main video-->
 			<article class="madVideo" data-aos="fade-up">
 				<div>
-					<div><img src="../images/img-mad-comingsoon.png" alt="Coming soon"></div>
+					<div><img src="../../images/img-mad-comingsoon.png" alt="Coming soon"></div>
 					<span>9월 3일 공개됩니다.</span>
 					<!-- <video muted autoplay loop playsinline>
 						<source src="" type="video/mp4">
@@ -65,13 +65,13 @@
 				<div class="swiper-container madSlide" data-aos="fade-up">
 					<ul class="swiper-wrapper">
 						<li class="swiper-slide">
-							<div><img src="../images/img-mad-photo1.png" alt="화보"></div>
+							<div><img src="../../images/img-mad-photo1.png" alt="화보"></div>
 						</li>
 						<li class="swiper-slide">
-							<div><img src="../images/img-mad-photo1.png" alt="화보"></div>
+							<div><img src="../../images/img-mad-photo1.png" alt="화보"></div>
 						</li>
 						<li class="swiper-slide">
-							<div><img src="../images/img-mad-photo1.png" alt="화보"></div>
+							<div><img src="../../images/img-mad-photo1.png" alt="화보"></div>
 						</li>
 					</ul>
 					<div class="swiper-scrollbar"></div>
@@ -79,16 +79,16 @@
 			</article>
 			<div class="pcQr" data-aos="fade-up">
 				<div>
-					<div><img src="../images/qr_img.png" alt="QR코드"></div>
+					<div><img src="../../images/qr_img.png" alt="QR코드"></div>
 					<p>이벤트 참여는 모바일로만 가능합니다.<br />모바일로 접속해 참여해주세요!</p>
 				</div>
 				<a href="#" class="goBtn">공유하기</a>
 			</div>
 		</div>
-		@@include('./include/footer.html')
+		@@include('./../include/footer.html')
 	</div>
 </body>
-	@@include('./include/footer_js.html')
+	@@include('./../include/footer_js.html')
 	<script>
 		// Partners slide
 		var mainslider = new Swiper('.madSlide', {
