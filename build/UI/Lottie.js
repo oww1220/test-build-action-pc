@@ -8,7 +8,7 @@ $(() => {
             elem: document.getElementById('lottie00_02'),
             loopFlag: true,
             autoplayFlag: true,
-            pathString: '../bundle/json/00_data-02.json',
+            pathString: '../../bundle/json/00_data-02.json',
         });
     }
     if (document.getElementById('lottie01')) {
@@ -16,7 +16,7 @@ $(() => {
             elem: document.getElementById('lottie01'),
             loopFlag: true,
             autoplayFlag: true,
-            pathString: '../bundle/json/01_data.json',
+            pathString: '../../bundle/json/01_data.json',
         });
     }
     if (document.getElementById('lottie03')) {
@@ -24,7 +24,7 @@ $(() => {
             elem: document.getElementById('lottie03'),
             loopFlag: true,
             autoplayFlag: true,
-            pathString: '../bundle/json/03_data.json',
+            pathString: '../../bundle/json/03_data.json',
         });
     }
     if (document.getElementById('lottie04')) {
@@ -32,7 +32,7 @@ $(() => {
             elem: document.getElementById('lottie04'),
             loopFlag: true,
             autoplayFlag: true,
-            pathString: '../bundle/json/04_data.json',
+            pathString: '../../bundle/json/04_data.json',
         });
     }
     if (document.getElementById('lottie05')) {
@@ -40,7 +40,7 @@ $(() => {
             elem: document.getElementById('lottie05'),
             loopFlag: true,
             autoplayFlag: true,
-            pathString: '../bundle/json/05_data.json',
+            pathString: '../../bundle/json/05_data.json',
         });
     }
     if (document.getElementById('lottie06')) {
@@ -48,7 +48,7 @@ $(() => {
             elem: document.getElementById('lottie06'),
             loopFlag: true,
             autoplayFlag: true,
-            pathString: '../bundle/json/06_data.json',
+            pathString: '../../bundle/json/06_data.json',
         });
     }
     if (document.getElementById('lottie09')) {
@@ -56,7 +56,7 @@ $(() => {
             elem: document.getElementById('lottie09'),
             loopFlag: true,
             autoplayFlag: true,
-            pathString: '../bundle/json/09_data.json',
+            pathString: '../../bundle/json/09_data.json',
         });
     }
     if (document.getElementById('lottie10')) {
@@ -64,7 +64,7 @@ $(() => {
             elem: document.getElementById('lottie10'),
             loopFlag: true,
             autoplayFlag: true,
-            pathString: '../bundle/json/10_data.json',
+            pathString: '../../bundle/json/10_data.json',
         });
     }
     if (document.getElementById('lottie11')) {
@@ -72,7 +72,7 @@ $(() => {
             elem: document.getElementById('lottie11'),
             loopFlag: true,
             autoplayFlag: true,
-            pathString: '../bundle/json/11_data.json',
+            pathString: '../../bundle/json/11_data.json',
         });
     }
     if (document.getElementById('lottie13')) {
@@ -80,7 +80,7 @@ $(() => {
             elem: document.getElementById('lottie13'),
             loopFlag: true,
             autoplayFlag: true,
-            pathString: '../bundle/json/13_data.json',
+            pathString: '../../bundle/json/13_data.json',
         });
     }
     if (document.getElementById('lottie14')) {
@@ -88,7 +88,7 @@ $(() => {
             elem: document.getElementById('lottie14'),
             loopFlag: true,
             autoplayFlag: true,
-            pathString: '../bundle/json/14_data.json',
+            pathString: '../../bundle/json/14_data.json',
         });
     }
 });

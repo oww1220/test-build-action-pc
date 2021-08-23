@@ -44,7 +44,7 @@ $(() => {
                 elem: document.getElementById('lottie00_01'),
                 loopFlag: false,
                 autoplayFlag: false,
-                pathString: '../bundle/json/00_data-01.json',
+                pathString: '../../bundle/json/00_data-01.json',
             });
             function* introClose() {
                 try {
