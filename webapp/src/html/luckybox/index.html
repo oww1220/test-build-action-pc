@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ko">
+	@@include('./../include/head.html')
+<body>
+	<div id="wrap">
+		<!-- Header -->
+		@@include('./../include/header.html')
+		<!-- // Header -->
+
+		<canvas id="webgl-universe"></canvas>
+
+		<div id="content" class="ticket">
+			<article class="userInfo">
+				
+				<a href="javascript:;" class="goBtn rocket-layer-open" data-layer="rocket-obj-lucky">럭키박스 레이어 열기</a>
+
+
+			</article>
+			
+		</div>
+
+		@@include('./../include/layer-rocket-ticket.html')
+		@@include('./../include/footer.html')
+	</div>
+</body>
+	@@include('./../include/footer_js.html')
+	<script>
+
+		setTimeout(function(){
+			$('.rocket-layer-open').trigger('click');
+		},100)
+		
+	</script>
+</html>
