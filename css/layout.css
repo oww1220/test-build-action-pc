@@ -373,6 +373,8 @@ body { font-size: 20px; min-width: 1024px; }
 
 .mainTab .tabContent ul .leftTab > dl dd { margin-top: 30px; font-family: 'Noto Sans KR bold', sans-serif; font-size: 20px; line-height: 1.6; letter-spacing: -0.4px; font-family: 'Noto Sans KR bold'; }
 
+.mainTab .tabContent ul .leftTab em { font-size: 12px; letter-spacing: -0.24px; line-height: 1.4; font-family: 'Noto Sans KR bold'; color: #fff; position: absolute; bottom: 59px; left: 50px; }
+
 .mainTab .tabContent ul .leftTab .universe { margin-top: 90px; text-align: center; }
 
 .mainTab .tabContent ul .leftTab .universe dl dt { font-size: 20px; line-height: 1.6; letter-spacing: -0.4px; font-family: 'Noto Sans KR bold'; }
@@ -715,6 +717,8 @@ body { font-size: 20px; min-width: 1024px; }
 .delivery .deliveryInfo > div ul li div dl:first-child { border-left: 0; }
 
 .delivery .deliveryInfo > div ul li div dl dt { font-size: 20px; line-height: 1.6; letter-spacing: -0.4px; font-family: 'Noto Sans KR bold'; }
+
+.delivery .deliveryInfo > div ul li div dl dt em { font-size: 12px; letter-spacing: -0.24px; line-height: 1.4; font-family: 'Noto Sans KR bold'; }
 
 .delivery .deliveryInfo > div ul li div dl dd { color: #575757; font-size: 14px; letter-spacing: -0.28px; line-height: 1.4; font-family: 'Noto Sans KR bold'; font-family: 'Noto Sans KR black'; }
 
@@ -1065,6 +1069,8 @@ body { font-size: 20px; min-width: 1024px; }
 .mad .madPass > dl dt { font-size: 60px; line-height: 1.5; letter-spacing: -1.2px; font-family: 'Noto Sans KR bold'; margin-bottom: 40px; }
 
 .mad .madPass > dl dd { font-size: 20px; line-height: 1.6; letter-spacing: -0.4px; font-family: 'Noto Sans KR bold'; }
+
+.mad .madPass em { font-size: 12px; letter-spacing: -0.24px; line-height: 1.4; font-family: 'Noto Sans KR bold'; color: #fff; position: absolute; bottom: 59px; left: 50px; }
 
 .mad .madPass h5 { margin-top: 130px; font-size: 28px; line-height: 1.6; letter-spacing: -0.56px; font-family: 'Noto Sans KR bold'; text-align: center; margin-bottom: 30px; }
 
