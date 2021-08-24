@@ -8,9 +8,9 @@ function tabMenu (clickMenu){
 	});
 }
 tabMenu($(".quickMenu li"));
-tabMenu($(".mainTab > ul li"));
+//tabMenu($(".mainTab > ul li"));
 tabMenu($(".numberIssuance a"));
-tabMenu($(".passTab > ul li"));
+//tabMenu($(".passTab > ul li"));
 
 // content tab menu
 function moveTab (tabName, tabLeft, tabRight){
@@ -35,8 +35,8 @@ function moveTab (tabName, tabLeft, tabRight){
 		});
 	});
 }
-moveTab($(".mainTab > ul"), $(".mainTab ul .left"), $(".mainTab ul .right"));
-moveTab($(".passTab > ul"), $(".passTab ul .left"), $(".passTab ul .right"));
+//moveTab($(".mainTab > ul"), $(".mainTab ul .left"), $(".mainTab ul .right"));
+//moveTab($(".passTab > ul"), $(".passTab ul .left"), $(".passTab ul .right"));
 
 // nav popup
 function navPop(){

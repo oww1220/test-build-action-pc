@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="ko">
+	@@include('./../include/head.html')
+<body>
+	<div id="wrap">
+		<!-- Header -->
+		@@include('./../include/header.html')
+		<!-- // Header -->
+
+		<canvas id="webgl-universe"></canvas>
+
+		<div id="content" class="spacePass">
+			<!--tab--> 
+			<article class="passTab">
+				<!-- tab title-->
+				<ul class="moveRight aos-tab">
+					<li class="left">
+						<a href="/passall">우주패스 all</a>
+					</li>
+					<li class="right on">
+						<a href="/passmini">우주패스 mini</a>
+					</li>
+				</ul>
+				<!-- tab content -->
+				<div class="tabContent">
+					<ul>
+						<!--left tab
+						<li class="leftTab">
+							<dl class="subTitle">
+								<dt data-aos="fade-up">프리미엄 우주 라이프를 꿈꾸는 당신을 위해</dt>
+								<dd data-aos="fade-up">우주패스 all</dd>
+							</dl>
+							<div class="monthCost" data-aos="fade-up">
+								<span>one</span>
+								<em>월 9,900원</em>
+								<strong>첫 달 1,000원</strong>
+							</div>
+							<p data-aos="fade-up">
+								어디에서도 볼 수 없던 온라인 쇼핑 할인과 무료 클라우드,<br />
+								취향에 맞춰 고르는 구독 혜택까지<br />
+								<br />
+								우주패스 all과 함께 시작되는 우주 라이프를<br />
+								지금 바로 확인해 보세요.
+							</p>
+							<a href="#" class="arrowBtn" data-aos="fade-up" target="_blank">첫달 1,000원에 구독하기</a>
+							<div class="passAllMerit">
+								<dl>
+									<dt data-aos="fade-up">우주패스 all</dt>
+									<dd data-aos="fade-up">기본 혜택 3가지</dd>
+								</dl>
+								<ul>
+									<li class="listAmazon" data-aos="fade-up">
+										<a href="javascript:;" class="rocket-layer-open" data-layer="rocket-obj-02">
+											<dl>
+												<dt>아마존</dt>
+												<dd>해외 직구 무료 배송 + 1만원 할인</dd>
+											</dl>
+											<div>자세히보기</div>
+										</a>
+									</li>
+									<li class="list11" data-aos="fade-up">
+										<a href="javascript:;" class="rocket-layer-open" data-layer="rocket-obj-01">
+											<dl>
+												<dt>11번가</dt>
+												<dd>
+													SK pay 3000포인트
+												</dd>
+											</dl>
+											<div>자세히보기</div>
+										</a>
+									</li>
+									<li class="listGoogle" data-aos="fade-up">
+										<a href="javascript:;" class="rocket-layer-open" data-layer="rocket-obj-03">
+											<dl>
+												<dt>Google One</dt>
+												<dd>100GB 용량 12개월 제공<br />
+													(9/14 부터 이용 가능)</dd>
+											</dl>
+											<div>자세히보기</div>
+										</a>
+									</li>
+								</ul>
+								<div data-aos="fade-up">
+									<p>라이프 스타일에 맞는 맞춤형 혜택이<br />
+										<strong>무료로!</strong>
+									</p>
+									<p>우주패스 all을 구독하시면<br />구독 혜택 중 1개를 원하는 대로 고를 수 있어요!
+									</p>
+								</div>
+							</div>
+							<h5 data-aos="fade-up">T우주와 함께하는 파트너들의<br />구독 혜택 알아보기</h5>
+							<div class="partnersSlide">
+								<ul>
+									<li data-aos="fade-up">
+										<a href="javascript:void(0);" class="rocket-layer-open" data-layer="rocket-obj-05">
+											<div><img src="../../images/logo_bm.png" alt="배달의민족"></div>
+											<span>배달의민족</span>
+											<dl>
+												<dt>매달 8천 원 할인</dt>
+												<dd>자세히보기</dd>
+											</dl>
+										</a>
+									</li>
+									<li data-aos="fade-up">
+										<a href="javascript:void(0);" class="rocket-layer-open" data-layer="rocket-obj-06">
+											<div><img src="../../images/logo_paris.png" alt="파리바게뜨"></div>
+											<span>파리바게뜨</span>
+											<dl>
+												<dt>빵과 음료 <br/>
+													최대 30% 할인</dt>
+												<dd>자세히보기</dd>
+											</dl>
+										</a>
+									</li>
+									<li data-aos="fade-up">
+										<a href="javascript:void(0);" class="rocket-layer-open" data-layer="rocket-obj-07">
+											<div><img src="../../images/logo_aboutpet.png" alt="어바웃펫"></div>
+											<span>어바웃펫</span>
+											<dl>
+												<dt>
+													반려동물 용품<br/>
+													매달 1만 원 할인
+												</dt>
+												<dd>자세히보기</dd>
+											</dl>
+										</a>
+									</li>
+									<li data-aos="fade-up">
+										<a href="javascript:void(0);" class="rocket-layer-open" data-layer="rocket-obj-08">
+											<div><img src="../../images/logo_starbucks_m.png" alt="스타벅스"></div>
+											<span>스타벅스</span>
+											<dl>
+												<dt>아메리카노 4잔<br/> 구매 시 1잔 무료<br/> (월 2회)</dt>
+												<dd>자세히보기</dd>
+											</dl>
+										</a>
+									</li>
+									<li data-aos="fade-up">
+										<a href="javascript:void(0);" class="rocket-layer-open" data-layer="rocket-obj-09">
+											<div><img src="../../images/logo_emart_m.png" alt="이마트"></div>
+											<span>이마트</span>
+											<dl>
+												<dt>매달 12,000원 <br/>
+													할인 혜택</dt>
+												<dd>자세히보기</dd>
+											</dl>
+										</a>
+									</li>
+									<li data-aos="fade-up">
+										<a href="javascript:void(0);" class="rocket-layer-open" data-layer="rocket-obj-10">
+											<div><img src="../../images/logo_kukka_m.png" alt="KUKKA"></div>
+											<span>꾸까</span>
+											<dl>
+												<dt>매달 9천 원 할인</dt>
+												<dd>자세히보기</dd>
+											</dl>
+										</a>
+									</li>
+									<li data-aos="fade-up">
+										<a href="javascript:void(0);" class="rocket-layer-open" data-layer="rocket-obj-11">
+											<div><img src="../../images/logo_ton28_m.png" alt="톤 28"></div>
+											<span>톤 28</span>
+											<dl>
+												<dt>매달 친환경 화장품<br/> 10,000원 할인</dt>
+												<dd>자세히보기</dd>
+											</dl>
+										</a>
+									</li>
+									<li data-aos="fade-up">
+										<a href="javascript:void(0);" class="rocket-layer-open" data-layer="rocket-obj-12">
+											<div><img src="../../images/logo_modu_m.png" alt="모두의 셔틀 "></div>
+											<span>모두의 셔틀</span>
+											<dl>
+												<dt>
+													출근 셔틀<br/>
+													매달 1만 원 할인
+												</dt>
+												<dd>자세히보기</dd>
+											</dl>
+										</a>
+									</li>
+									<li data-aos="fade-up">
+										<a href="javascript:void(0);" class="rocket-layer-open" data-layer="rocket-obj-13">
+											<div><img src="../../images/logo_ut_m.png" alt="TMAP"></div>
+											<span>TMAP 플러스 베이직</span>
+											<dl>
+												<dt>매달 모빌리티를<br/> 위한 다양한 혜택</dt>
+												<dd>자세히보기</dd>
+											</dl>
+										</a>
+									</li>
+									<li data-aos="fade-up">
+										<a href="javascript:void(0);" class="rocket-layer-open" data-layer="rocket-obj-14">
+											<div><img src="../../images/logo_bio_m.png" alt="바이오퍼블릭"></div>
+											<span>바이오퍼블릭</span>
+											<dl>
+												<dt>매달 영양제 2개<br/> 
+													교환권 제공</dt>
+												<dd>자세히보기</dd>
+											</dl>
+										</a>
+									</li>
+									<li data-aos="fade-up">
+										<a href="javascript:void(0);" class="rocket-layer-open" data-layer="rocket-obj-15">
+											<div><img src="../../images/logo_aia_m.png" alt="AIA Vitality"></div>
+											<span>AIA Vitality</span>
+											<dl>
+												<dt>
+													4가지 혜택 중<br/> 
+													1개 선택<br/> 
+													(주간 미션 달성 시)
+												</dt>
+												<dd>자세히보기</dd>
+											</dl>
+										</a>
+									</li>
+									<li data-aos="fade-up">
+										<a href="javascript:void(0);" class="rocket-layer-open" data-layer="rocket-obj-16">
+											<div><img src="../../images/logo_dobrain_m.png" alt="Do Brain"></div>
+											<span>두브레인</span>
+											<dl>
+												<dt>
+													두뇌 교육 프로그램 <br/> 
+													매달 50% 할인
+												<dd>자세히보기</dd>
+											</dl>
+										</a>
+									</li>
+									<li data-aos="fade-up">
+										<a href="javascript:void(0);" class="rocket-layer-open" data-layer="rocket-obj-17">
+											<div><img src="../../images/logo_spoon_m.png" alt="SPOON"></div>
+											<span>스푼 패스</span>
+											<dl>
+												<dt>매달 스푼 50개<br/> & 
+													10 Like 아이템<br/> 
+													3개 무료</dt>
+												<dd>자세히보기</dd>
+											</dl>
+										</a>
+									</li>
+									<li data-aos="fade-up">
+										<a href="javascript:void(0);" class="rocket-layer-open" data-layer="rocket-obj-18">
+											<div><img src="../../images/wave_logo.png" alt="wavve"></div>
+											<span>웨이브</span>
+											<dl>
+												<dt>wavve 컨텐츠<br/>이용권 제공</dt>
+												<dd>자세히보기</dd>
+											</dl>
+										</a>
+									</li>
+									<li data-aos="fade-up">
+										<a href="javascript:void(0);" class="rocket-layer-open" data-layer="rocket-obj-19">
+											<div><img src="../../images/logo_flo_m.png" alt="Flo"></div>
+											<span>플로</span>
+											<dl>
+												<dt>무제한 듣기<br/>
+													이용권 제공</dt>
+												<dd>자세히보기</dd>
+											</dl>
+										</a>
+									</li>
+									<li data-aos="fade-up">
+										<a href="javascript:void(0);" class="rocket-layer-open" data-layer="rocket-obj-20">
+											<div><img src="../../images/logo_coloring_m.png" alt="v컬러링"></div>
+											<span>v컬러링</span>
+											<dl>
+												<dt>
+													이용권 무료<br/>
+													유료 컨텐츠<br/>
+													쿠폰 4개
+												</dt>
+												<dd>자세히보기</dd>
+											</dl>
+										</a>
+									</li>
+									<li data-aos="fade-up">
+										<a href="javascript:void(0);" class="rocket-layer-open" data-layer="rocket-obj-21">
+											<div><img src="../../images/logo_onebooks_m.png" alt="원스토어 북패스"></div>
+											<span>원스토어 북패스</span>
+											<dl>
+												<dt>5만여 권의 책과<br/> 
+													2천 북스포인트
+													</dt>
+												<dd>자세히보기</dd>
+											</dl>
+										</a>
+									</li>
+									<li data-aos="fade-up">
+										<a href="javascript:void(0);" class="rocket-layer-open" data-layer="rocket-obj-22">
+											<div><img src="../../images/logo_xbox_m.png" alt="XBOX 게임패스 얼티밋"></div>
+											<span>게임패스
+												얼티밋</span>
+											<dl>
+												<dt>100개 이상의<br/>
+													Xbox 게임</dt>
+												<dd>자세히보기</dd>
+											</dl>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</li>-->
+						<!--right tab-->
+						<li class="rightTab" style="display: block;">
+							<dl class="subTitle">
+								<dt data-aos="fade-up">합리적인 우주 라이프의 시작을 위해</dt>
+								<dd data-aos="fade-up">우주패스 mini</dd>
+							</dl>
+							<div class="monthCost" data-aos="fade-up">
+								<span>one</span>
+								<em>월 4,900원</em>
+								<strong>첫 달 100원</strong>
+							</div>
+							<p data-aos="fade-up">
+								기본 혜택만으로 T우주를 즐기기에 충분한 당신에게 우주패스 mini를 추천합니다.<br/>
+								보다 합리적인 가격으로 아래의 혜택들을 모두 만나 보세요.
+							</p>
+							<!-- <p class="second" data-aos="fade-up">보다 합리적인 가격으로 아래의 혜택들을 모두 만나보세요!
+							</p> -->
+							<a href="#" class="arrowBtn" data-aos="fade-up" target="_blank">첫달 100원에 구독하기</a>
+							<div class="passAllMerit">
+								<dl>
+									<dt data-aos="fade-up">우주패스 mini</dt>
+									<dd data-aos="fade-up">기본 혜택 2가지</dd>
+								</dl>
+								<ul>
+									<li class="listAmazon" data-aos="fade-up">
+										<a href="javascript:;" class="rocket-layer-open" data-layer="rocket-obj-02">
+											<dl>
+												<dt>아마존</dt>
+												<dd>해외 직구 무료 배송 + 1만원 할인</dd>
+											</dl>
+											<div>자세히보기</div>
+										</a>
+									</li>
+									<li class="list11" data-aos="fade-up">
+										<a href="javascript:;" class="rocket-layer-open" data-layer="rocket-obj-01">
+											<dl>
+												<dt>11번가</dt>
+												<dd>SK pay 3000포인트</dd>
+											</dl>
+											<div>자세히보기</div>
+										</a>
+									</li>
+								</ul>
+								<div data-aos="fade-up">
+									<p>두 가지 혜택 중 하나를 선택하여 즐겨보세요! (택 1 제공)</p>
+									<ul>
+										<li>
+											<a href="javascript:;" class="rocket-layer-open" data-layer="rocket-obj-mini-03">
+												<div><img src="../../images/google_logo_one.png" alt="구글원"></div>
+												<span>Google One</span>
+												<dl>
+													<dt>
+														100GB<br/>
+														용량 제공<br/>
+														<em>(9/14부터 선택 가능)</em>
+													</dt>
+													<dd>자세히 보기</dd>
+												</dl>
+											</a>
+										</li>
+										<li>
+											<a href="javascript:;" class="rocket-layer-open" data-layer="rocket-obj-mini-04">
+												<div><img src="../../images/wave_logo.png" alt="wave"></div>
+												<span>wavve Lite</span>
+												<dl>
+													<dt>부담없이<br/>즐기는 다양한<br/>콘텐츠</dt>
+													<dd>자세히 보기</dd>
+												</dl>
+											</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</article>
+			<div class="pcQr" data-aos="fade-up">
+				<div>
+					<div><img src="../../images/qr_img.png" alt="QR코드"></div>
+					<p>이벤트 참여는 모바일로만 가능합니다.<br />모바일로 접속해 참여해주세요!</p>
+				</div>
+				<a href="#" class="goBtn">공유하기</a>
+			</div>
+		</div>
+		@@include('./../include/layer-rocket.html')
+		@@include('./../include/footer.html')
+	</div>
+</body>
+	@@include('./../include/footer_js.html')
+</html>
