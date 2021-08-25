@@ -210,10 +210,15 @@ body
 	margin-top: 80px
 	padding: 40px 0
 	background-color: $bgColor03
-	h5
+	h5,
+	h6
+		font-size: 18px
 		margin: 0 auto
 		width: 712px
-		+font14()
+		
+	h6
+		margin-top: 10px
+		font-size: 14px
 	ul
 		margin: 0 auto
 		width: 712px
@@ -237,6 +242,18 @@ body
 				color: $white
 			a
 				color: $lightGray
+	.passall-eventNotice-promotions
+		margin-top: 0px;
+		li
+			padding-left: 0px;	
+			&::before
+				content: none
+	.eventNotice-text-w
+		color: #fff
+	.eventNotice-text-mt
+		margin-top: 20px
+	.eventNotice-bottom
+		margin-top: 40px
 .alertWin
 	position: fixed
 	top: 0
