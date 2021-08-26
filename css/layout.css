@@ -140,7 +140,9 @@ header nav ul li { margin-left: 50px; }
 
 header nav ul li:first-child { margin-left: 0; }
 
-header nav ul li a { font-size: 20px; line-height: 1.6; letter-spacing: -0.4px; font-family: 'Noto Sans KR bold'; color: #ffffff; display: block; line-height: 50px; }
+header nav ul li a { font-size: 16px; line-height: 25px; letter-spacing: -0.32px; font-family: 'Noto Sans KR bold'; color: #ffffff; display: block; line-height: 50px; }
+
+header nav ul li a:hover { color: #5e45d8; }
 
 /* 컴파일되는 여러 줄 주석 */
 /************** Common ***************/
@@ -710,9 +712,9 @@ body { font-size: 20px; min-width: 1024px; }
 
 .delivery .deliveryInfo > dl dd { margin-top: 10px; font-size: 20px; line-height: 1.6; letter-spacing: -0.4px; font-family: 'Noto Sans KR bold'; }
 
-.delivery .deliveryInfo > dl dd.winner strong { text-align: center; display: block; }
+.delivery .deliveryInfo > dl dd.winner strong { text-align: center; font-size: 20px; line-height: 1.6; letter-spacing: -0.4px; font-weight: 900; }
 
-.delivery .deliveryInfo > dl dd.winner span { display: block; text-align: center; }
+.delivery .deliveryInfo > dl dd.winner span { display: inline-block; height: 29px; vertical-align: middle; font-size: 16px; font-weight: 900; line-height: 1.6; letter-spacing: -0.32px; text-align: center; }
 
 .delivery .deliveryInfo > div { margin-top: 20px; }
 
