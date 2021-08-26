@@ -2,6 +2,10 @@
 <html lang="ko">
 	@@include('./../include/head.html')
 <body>
+	<!-- Google Tag Manager (noscript) -->
+	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PZDPRDG" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+	<!-- End Google Tag Manager (noscript) -->
+
 	<div id="wrap">
 		<!-- Header -->
 		@@include('./../include/header.html')
@@ -15,10 +19,12 @@
 				<!-- tab title-->
 				<ul class="moveRight aos-tab">
 					<li class="left">
-						<a href="/passall">우주패스 all</a>
+						<a href="/passall"
+						ga_category="T우주_우주패스 mini" ga_action="클릭" ga_label="우주패스 all">우주패스 all</a>
 					</li>
 					<li class="right on">
-						<a href="/passmini">우주패스 mini</a>
+						<a href="/passmini"
+						ga_category="T우주_우주패스 mini" ga_action="클릭" ga_label="우주패스 mini">우주패스 mini</a>
 					</li>
 				</ul>
 				<!-- tab content -->
