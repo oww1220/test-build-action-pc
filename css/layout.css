@@ -951,7 +951,7 @@ body { font-size: 20px; min-width: 1024px; }
 
 .spacePass .passTab .tabContent ul .leftTab .partnersSlide ul { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -ms-flex-wrap: wrap; flex-wrap: wrap; }
 
-.spacePass .passTab .tabContent ul .leftTab .partnersSlide ul li { width: 170px; background-color: rgba(87, 87, 87, 0.411); padding: 15px 20px; position: relative; border-radius: 10px; margin-left: 10px; }
+.spacePass .passTab .tabContent ul .leftTab .partnersSlide ul li { width: 170px; background-color: rgba(87, 87, 87, 0.411); padding: 15px 10px; position: relative; border-radius: 10px; margin-left: 10px; }
 
 .spacePass .passTab .tabContent ul .leftTab .partnersSlide ul li:nth-child(4n+1) { margin-left: 0; }
 
@@ -971,7 +971,7 @@ body { font-size: 20px; min-width: 1024px; }
 
 .spacePass .passTab .tabContent ul .leftTab .partnersSlide ul li a dl dt { height: 100px; text-align: center; font-size: 16px; line-height: 25px; letter-spacing: -0.32px; font-family: 'Noto Sans KR bold'; }
 
-.spacePass .passTab .tabContent ul .leftTab .partnersSlide ul li a dl dd { font-size: 14px; letter-spacing: -0.28px; line-height: 1.4; font-family: 'Noto Sans KR bold'; margin-top: 10px; color: #ffffff; opacity: 0.4; position: relative; }
+.spacePass .passTab .tabContent ul .leftTab .partnersSlide ul li a dl dd { font-size: 14px; letter-spacing: -0.28px; line-height: 1.4; font-family: 'Noto Sans KR bold'; margin-top: 10px; margin-left: 10px; color: #ffffff; opacity: 0.4; position: relative; }
 
 .spacePass .passTab .tabContent ul .leftTab .partnersSlide ul li a dl dd::after { content: ""; position: absolute; top: 5px; left: 65px; width: 10px; height: 10px; border-top: 1px solid #c9c9c9; border-right: 1px solid #c9c9c9; -webkit-transform: rotate(45deg); transform: rotate(45deg); }
 
@@ -1083,6 +1083,8 @@ body { font-size: 20px; min-width: 1024px; }
 .mad .madPass > dl { text-align: center; margin-top: 58px; margin-bottom: 130px; }
 
 .mad .madPass > dl dt { font-size: 60px; line-height: 1.5; letter-spacing: -1.2px; font-family: 'Noto Sans KR bold'; margin-bottom: 40px; }
+
+.mad .madPass > dl dt span { color: #3617ce; }
 
 .mad .madPass > dl dd { font-size: 20px; line-height: 1.6; letter-spacing: -0.4px; font-family: 'Noto Sans KR bold'; }
 
