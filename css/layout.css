@@ -1353,7 +1353,7 @@ body.overlay-hidden { overflow: hidden; }
 
 .layer-rocket .layer-top.no-cloud { background-position: center -300%; }
 
-.layer-rocket .layer-cont { width: 510px; max-height: 100vh; background-color: #fff; overflow-x: hidden; overflow-y: auto; -webkit-transition: all 0.5s; transition: all 0.5s; opacity: 1; border-radius: 60px; -webkit-transition: -webkit-transform 1s; transition: -webkit-transform 1s; transition: transform 1s; transition: transform 1s, -webkit-transform 1s; -webkit-transform: translateY(120%); transform: translateY(120%); }
+.layer-rocket .layer-cont { width: 510px; max-height: 75vh; background-color: #fff; overflow-x: hidden; overflow-y: auto; -webkit-transition: all 0.5s; transition: all 0.5s; opacity: 1; border-radius: 60px; -webkit-transition: -webkit-transform 1s; transition: -webkit-transform 1s; transition: transform 1s; transition: transform 1s, -webkit-transform 1s; -webkit-transform: translateY(120%); transform: translateY(120%); }
 
 .layer-rocket .layer-cont.w600 { width: 600px; }
 
