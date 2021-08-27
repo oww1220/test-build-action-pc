@@ -1047,6 +1047,37 @@ body.fixed {
     }
 }
 
+
+.swiper-arrows {
+    width: 712px;
+    position: relative;
+    margin: 0 auto;
+    .swiper-button {
+        @include Hide_txt;
+        background-position: center center;
+        background-repeat: no-repeat;
+        width: 32px;
+        height: 56px;
+        position: absolute;
+        top: -250px;
+        z-index: 1;
+        cursor: pointer;
+        &.prev {
+            background-image: url('../images/btn-slide-prev.png');
+            left: -90px;
+        }
+        &.next {
+            background-image: url('../images/btn-slide-next.png');
+            right: -90px;
+        }
+        &.swiper-button-disabled {
+            opacity: .5;
+            pointer-events: none;
+        }
+    }
+    
+}
+
 @keyframes slide-out-top {
     0% {
         transform: translateY(0);

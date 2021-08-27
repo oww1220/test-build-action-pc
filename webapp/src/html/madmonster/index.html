@@ -73,9 +73,9 @@
 						<li class="swiper-slide">
 							<div><img src="../../images/img-mad-photo1.png" alt="화보"></div>
 						</li>
-						<!-- <li class="swiper-slide">
+						<li class="swiper-slide">
 							<div><img src="../../images/img-mad-photo2.png" alt="화보"></div>
-						</li> -->
+						</li>
 						<li class="swiper-slide">
 							<div><img src="../../images/img-mad-photo3.png" alt="화보"></div>
 						</li>
@@ -139,6 +139,12 @@
 					</ul>
 					<div class="swiper-scrollbar"></div>
 				</div>
+
+				<div class="swiper-arrows">
+					<div class="swiper-button prev">prev</div>
+					<div class="swiper-button next">next</div>
+				</div>
+
 			</article>
 			<div class="pcQr" data-aos="fade-up">
 				<div>
@@ -162,6 +168,10 @@
 				el: ".swiper-scrollbar",
 				hide: false,
 				draggable: true,
+			},
+			navigation: {
+				nextEl: ".swiper-arrows .next",
+				prevEl: ".swiper-arrows .prev",
 			},
 			speed : 1000,
 			spaceBetween: 10
