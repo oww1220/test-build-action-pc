@@ -1577,6 +1577,16 @@ body.fixed { overflow: hidden; position: fixed; }
 
 .ticket .ticketRewards ul li:last-child.add-svg .svg-W { position: absolute; top: -150px; right: -75px; width: 350px; }
 
+.swiper-arrows { width: 712px; position: relative; margin: 0 auto; }
+
+.swiper-arrows .swiper-button { font: 0/0 a; background-position: center center; background-repeat: no-repeat; width: 32px; height: 56px; position: absolute; top: -250px; z-index: 1; cursor: pointer; }
+
+.swiper-arrows .swiper-button.prev { background-image: url("../images/btn-slide-prev.png"); left: -90px; }
+
+.swiper-arrows .swiper-button.next { background-image: url("../images/btn-slide-next.png"); right: -90px; }
+
+.swiper-arrows .swiper-button.swiper-button-disabled { opacity: .5; pointer-events: none; }
+
 @-webkit-keyframes slide-out-top { 0% { -webkit-transform: translateY(0); transform: translateY(0);
   opacity: 1; }
  100% { -webkit-transform: translateY(-1000px); transform: translateY(-1000px);
