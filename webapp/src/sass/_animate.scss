@@ -237,7 +237,7 @@ header nav > div {
         z-index: 0;
     }
     .btn-back {
-        width: 305px;
+        width: 345px;
         height: 56px;
         display: inline-flex;
         @include font20;
@@ -560,6 +560,8 @@ body.overlay-hidden {
         > div {
             text-align: center;
             dl {
+                width: 110%;
+                margin-left: -5%;
                 dt {
                     text-align: center;
                 }
@@ -668,6 +670,7 @@ body.overlay-hidden {
                 img {
                     width: 80%;
                     max-width:400px;
+                    margin-right: 5%;
                 }
             }
             ul {
@@ -1059,7 +1062,7 @@ body.fixed {
         width: 32px;
         height: 56px;
         position: absolute;
-        top: -250px;
+        top: -325px;
         z-index: 1;
         cursor: pointer;
         &.prev {
