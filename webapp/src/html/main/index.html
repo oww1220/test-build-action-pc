@@ -256,6 +256,19 @@
 	
 <script>
 
+	function introCheck() {
+		if(sessionStorage.getItem('mainIntro')){
+			$('.intro-overlay').hide();
+			return;
+		}
+		else {
+			setTimeout(function(){
+				sessionStorage.setItem('mainIntro', true);
+			}, 4500);
+		}
+	}
+	introCheck();
+
 	// 주소복사
 	function clip(){
 		var url = '';
