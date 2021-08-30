@@ -818,8 +818,6 @@ body { font-size: 20px; min-width: 1024px; }
 
 .delivery .pcQr > div { margin-top: 145px; }
 
-.delivery .eventNotice { margin-top: 266px; }
-
 .imageFile { display: none; position: fixed; top: 0; left: 0; width: 100%; height: calc(100vh + 100px); background-color: #000000; z-index: 110; overflow-y: scroll; overflow-x: hidden; }
 
 .imageFile.on { display: block; -webkit-animation: opacity 1s both; animation: opacity 1s both; }
@@ -1280,7 +1278,7 @@ header nav > div { background: none; }
 
 .bg-overlay.hide { opacity: 0; }
 
-.intro-overlay { background: url("../images/dumy-overlay2.png") center center no-repeat #fff; position: fixed; top: 0; left: 0; bottom: 0; right: 0; background-size: cover; -webkit-transform: scale(1); transform: scale(1); -webkit-transform-origin: 50% 32%; transform-origin: 50% 32%; -webkit-transition: background-color 2.3s, -webkit-transform 2.5s; transition: background-color 2.3s, -webkit-transform 2.5s; transition: transform 2.5s, background-color 2.3s; transition: transform 2.5s, background-color 2.3s, -webkit-transform 2.5s; z-index: 111; }
+.intro-overlay { background: url("../images/dumy-overlay2.png") center center no-repeat #fff; position: fixed; top: 0; left: 0; bottom: 0; right: 0; background-size: cover; -webkit-transform: scale(1); transform: scale(1); -webkit-transform-origin: 50% 32%; transform-origin: 50% 32%; -webkit-transition: background-color 1.5s, -webkit-transform 1.7s; transition: background-color 1.5s, -webkit-transform 1.7s; transition: transform 1.7s, background-color 1.5s; transition: transform 1.7s, background-color 1.5s, -webkit-transform 1.7s; z-index: 111; }
 
 .intro-overlay .intro-video { position: absolute; -webkit-transform: translate3d(-50%, -50%, 0); transform: translate3d(-50%, -50%, 0); top: 50%; left: 50%; max-width: 100%; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; background-color: #fff; overflow: hidden; }
 

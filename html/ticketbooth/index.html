@@ -186,7 +186,7 @@
 					<div><img src="../../images/qr_img.png" alt="QR코드"></div>
 					<p>이벤트 참여는 모바일로만 가능합니다.<br />모바일로 접속해 참여해 주세요!</p>
 				</div>
-				<a href="#" class="goBtn">공유하기</a>
+				<a href="javascipt:void(0);" onclick="clip(); return false;" class="goBtn">공유하기</a>
 			</div>
 			<article class="eventNotice">
 				<h5>유의사항</h5>
@@ -550,6 +550,20 @@
 <script src="../../js/swiper.min.js"></script>
 <script src="../../js/common.js"></script>
 	<script>
+
+
+		// 주소복사
+		function clip(){
+			var url = '';
+			var textarea = document.createElement('textarea');
+			document.body.appendChild(textarea);
+			url = window.document.location.href;
+			textarea.value = url;
+			textarea.select();
+			document.execCommand('copy');
+			document.body.removeChild(textarea);
+			alert('주소가 복사되었습니다.')
+		}
 
 		//쿼리 스트링 체크후 레이어팝업 열림
 		function getParameterByName(name) {
